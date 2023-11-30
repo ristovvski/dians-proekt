@@ -8,6 +8,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+        // test na changes
     }
 
     public class ExternalLoginListViewModel

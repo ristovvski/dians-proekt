@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CulturallyHistoricalObjectsWebApp.Models;
+using System.Collections.Generic;
 
 namespace CulturallyHistoricalObjectsWebApp.Controllers
 {
@@ -59,6 +60,27 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();
+        }
+
+        public ActionResult AddUserToRole()
+        {
+            AddUserToRoleModel model = new AddUserToRoleModel();
+            model.Roles = new List<string>() { "Administrator", "User" };
+            return View(model);
+        }
+
+
+        [Authorize(Roles ="Administrator")]
+        [HttpPost]
+        public ActionResult AddUserToRole(AddUserToRoleModel model)
+        {
+            var user = UserManager.FindByEmail(model.Email);
+            if (user == null)
+            {
+                throw new HttpException(404, "Not Found");
+            }
+            UserManager.AddToRole(user.Id, model.SelectedRole);
+            return RedirectToAction("Index", "Home");
         }
 
         //

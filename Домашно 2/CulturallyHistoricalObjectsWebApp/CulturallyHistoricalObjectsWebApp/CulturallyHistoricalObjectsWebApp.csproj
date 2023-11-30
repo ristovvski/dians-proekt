@@ -46,10 +46,44 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -169,12 +203,80 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HistoricalCulturalObjectsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Data\AppDbSeeding.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311291153444_InitMigration.cs" />
+    <Compile Include="Migrations\202311291153444_InitMigration.designer.cs">
+      <DependentUpon>202311291153444_InitMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291456409_testMigration.cs" />
+    <Compile Include="Migrations\202311291456409_testMigration.designer.cs">
+      <DependentUpon>202311291456409_testMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291459040_dataSeedingTest.cs" />
+    <Compile Include="Migrations\202311291459040_dataSeedingTest.designer.cs">
+      <DependentUpon>202311291459040_dataSeedingTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291509203_seedingTest.cs" />
+    <Compile Include="Migrations\202311291509203_seedingTest.designer.cs">
+      <DependentUpon>202311291509203_seedingTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291544466_seedingMigrationTestFinal.cs" />
+    <Compile Include="Migrations\202311291544466_seedingMigrationTestFinal.designer.cs">
+      <DependentUpon>202311291544466_seedingMigrationTestFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291551104_debugging.cs" />
+    <Compile Include="Migrations\202311291551104_debugging.designer.cs">
+      <DependentUpon>202311291551104_debugging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291559200_seedingMigration5PM.cs" />
+    <Compile Include="Migrations\202311291559200_seedingMigration5PM.designer.cs">
+      <DependentUpon>202311291559200_seedingMigration5PM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291612494_seedingMigrationTest.cs" />
+    <Compile Include="Migrations\202311291612494_seedingMigrationTest.designer.cs">
+      <DependentUpon>202311291612494_seedingMigrationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291614222_anotherSeedingTestMigration.cs" />
+    <Compile Include="Migrations\202311291614222_anotherSeedingTestMigration.designer.cs">
+      <DependentUpon>202311291614222_anotherSeedingTestMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291617382_finalTouchesSeeding.cs" />
+    <Compile Include="Migrations\202311291617382_finalTouchesSeeding.designer.cs">
+      <DependentUpon>202311291617382_finalTouchesSeeding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291622444_another2TestMigrationSeeding.cs" />
+    <Compile Include="Migrations\202311291622444_another2TestMigrationSeeding.designer.cs">
+      <DependentUpon>202311291622444_another2TestMigrationSeeding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311291635105_removingDuplicates.cs" />
+    <Compile Include="Migrations\202311291635105_removingDuplicates.designer.cs">
+      <DependentUpon>202311291635105_removingDuplicates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311292137113_testingJsonPath.cs" />
+    <Compile Include="Migrations\202311292137113_testingJsonPath.designer.cs">
+      <DependentUpon>202311292137113_testingJsonPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311292139496_relativePathMigration.cs" />
+    <Compile Include="Migrations\202311292139496_relativePathMigration.designer.cs">
+      <DependentUpon>202311292139496_relativePathMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311292141469_anotherPathTest.cs" />
+    <Compile Include="Migrations\202311292141469_anotherPathTest.designer.cs">
+      <DependentUpon>202311292141469_anotherPathTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311292143321_relativePathFinalMigration.cs" />
+    <Compile Include="Migrations\202311292143321_relativePathFinalMigration.designer.cs">
+      <DependentUpon>202311292143321_relativePathFinalMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\HistoricalCulturalObjects.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,6 +308,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\json_data\result.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -251,6 +354,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\Create.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\Delete.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\Details.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\Edit.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\Index.cshtml" />
+    <Content Include="Views\Account\AddUserToRole.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +390,56 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202311291153444_InitMigration.resx">
+      <DependentUpon>202311291153444_InitMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291456409_testMigration.resx">
+      <DependentUpon>202311291456409_testMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291459040_dataSeedingTest.resx">
+      <DependentUpon>202311291459040_dataSeedingTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291509203_seedingTest.resx">
+      <DependentUpon>202311291509203_seedingTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291544466_seedingMigrationTestFinal.resx">
+      <DependentUpon>202311291544466_seedingMigrationTestFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291551104_debugging.resx">
+      <DependentUpon>202311291551104_debugging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291559200_seedingMigration5PM.resx">
+      <DependentUpon>202311291559200_seedingMigration5PM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291612494_seedingMigrationTest.resx">
+      <DependentUpon>202311291612494_seedingMigrationTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291614222_anotherSeedingTestMigration.resx">
+      <DependentUpon>202311291614222_anotherSeedingTestMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291617382_finalTouchesSeeding.resx">
+      <DependentUpon>202311291617382_finalTouchesSeeding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291622444_another2TestMigrationSeeding.resx">
+      <DependentUpon>202311291622444_another2TestMigrationSeeding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311291635105_removingDuplicates.resx">
+      <DependentUpon>202311291635105_removingDuplicates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311292137113_testingJsonPath.resx">
+      <DependentUpon>202311292137113_testingJsonPath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311292139496_relativePathMigration.resx">
+      <DependentUpon>202311292139496_relativePathMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311292141469_anotherPathTest.resx">
+      <DependentUpon>202311292141469_anotherPathTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311292143321_relativePathFinalMigration.resx">
+      <DependentUpon>202311292143321_relativePathFinalMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

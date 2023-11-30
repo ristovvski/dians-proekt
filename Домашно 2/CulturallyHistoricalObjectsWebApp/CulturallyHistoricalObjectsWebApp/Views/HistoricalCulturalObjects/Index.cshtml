@@ -1,0 +1,28 @@
+﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCulturalObjects
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="display: flex;">
+    <div style="width: 40%; align-items: center; justify-content: center">
+        <h2>Filter</h2>
+        @using (Html.BeginForm("FindClosest", "HistoricalCulturalObjects", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.LabelFor(model => model.name, "Name:")
+                @Html.TextBoxFor(model => model.name, new { @class = "form-control", id = "name" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.type, "Category:")
+                @Html.DropDownListFor(model => model.type, new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Category 1", Value = "Category1" },
+                    new SelectListItem { Text = "Category 2", Value = "Category2" }
+                }, "Select Category", new { @class = "form-control", id = "category" })
+            </div>
+            <button type="submit" class="btn btn-primary">Find all</button>
+            <button type="submit" name="findClosest" value="true" class="btn btn-danger">Find closest</button>
+        }
+    </div>
+</div>
