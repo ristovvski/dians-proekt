@@ -290,6 +290,22 @@
     <Compile Include="Migrations\202311301249534_testTypesDatabase.designer.cs">
       <DependentUpon>202311301249534_testTypesDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311301318346_objectTypesMigration.cs" />
+    <Compile Include="Migrations\202311301318346_objectTypesMigration.designer.cs">
+      <DependentUpon>202311301318346_objectTypesMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311301323438_objectTypesChanges2.cs" />
+    <Compile Include="Migrations\202311301323438_objectTypesChanges2.designer.cs">
+      <DependentUpon>202311301323438_objectTypesChanges2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311301326391_objectTypesChanges3.cs" />
+    <Compile Include="Migrations\202311301326391_objectTypesChanges3.designer.cs">
+      <DependentUpon>202311301326391_objectTypesChanges3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311301333053_objectTypeCHanges4.cs" />
+    <Compile Include="Migrations\202311301333053_objectTypeCHanges4.designer.cs">
+      <DependentUpon>202311301333053_objectTypeCHanges4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\HCObjectsDTO.cs" />
@@ -469,6 +485,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311301249534_testTypesDatabase.resx">
       <DependentUpon>202311301249534_testTypesDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301318346_objectTypesMigration.resx">
+      <DependentUpon>202311301318346_objectTypesMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301323438_objectTypesChanges2.resx">
+      <DependentUpon>202311301323438_objectTypesChanges2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301326391_objectTypesChanges3.resx">
+      <DependentUpon>202311301326391_objectTypesChanges3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301333053_objectTypeCHanges4.resx">
+      <DependentUpon>202311301333053_objectTypeCHanges4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -17,5 +17,10 @@ namespace CulturallyHistoricalObjectsWebApp.Models
         {
             this.type = type;
         }
+
+        public ObjectTypesModel()
+        {
+            type = null;
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace CulturallyHistoricalObjectsWebApp.Data
 
         public List<String> getStringTypes(List<HCObjectsDTO> objects)
         {
-            List<string> typesList = objects.Select(o => o.ToString()).ToList();
+            List<string> typesList = objects.Select(o => o.type).ToList();
 
             return typesList;
         }

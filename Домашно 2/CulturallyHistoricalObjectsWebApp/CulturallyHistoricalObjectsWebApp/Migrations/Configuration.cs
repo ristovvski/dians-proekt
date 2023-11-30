@@ -24,6 +24,9 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
+            context.Database.ExecuteSqlCommand("DELETE FROM HistoricalCulturalObjects");
+            context.Database.ExecuteSqlCommand("DELETE FROM ObjectTypesModels");
+
             string relativePath = @"Content\json_data\result.json";
             string fullPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\", relativePath));
             AppDbSeeding appSeeding = new AppDbSeeding();
@@ -36,14 +39,8 @@
             // Populate ObjectTypesModel table
             foreach (string type in uniqueTypes)
             {
-                // Check if the type exists in the database
-                bool typeExists = context.objectTypes.Any(x => x.type == type);
-
-                if (!typeExists)
-                {
-                    ObjectTypesModel newType = new ObjectTypesModel(type);
-                    context.objectTypes.Add(newType);
-                }
+                ObjectTypesModel newType = new ObjectTypesModel(type);
+                context.objectTypes.Add(newType);
             }
 
             context.SaveChanges();
@@ -56,8 +53,8 @@
                 tmp.lat = obj.lat;
                 tmp.lon = obj.lon;
 
-                // Retrieve ObjectTypesModel instance based on the type string
-                ObjectTypesModel objectType = context.objectTypes.SingleOrDefault(x => x.type == typeStringified[i]);
+                // Retrieve ObjectTypesModel instance based on the type from current object
+                ObjectTypesModel objectType = context.objectTypes.SingleOrDefault(x => x.type == obj.type);
 
                 if (objectType != null)
                 {
