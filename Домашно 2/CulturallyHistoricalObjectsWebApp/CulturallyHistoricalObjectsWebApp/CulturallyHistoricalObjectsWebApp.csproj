@@ -222,89 +222,9 @@
     <Compile Include="Migrations\202311291459040_dataSeedingTest.designer.cs">
       <DependentUpon>202311291459040_dataSeedingTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202311291509203_seedingTest.cs" />
-    <Compile Include="Migrations\202311291509203_seedingTest.designer.cs">
-      <DependentUpon>202311291509203_seedingTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291544466_seedingMigrationTestFinal.cs" />
-    <Compile Include="Migrations\202311291544466_seedingMigrationTestFinal.designer.cs">
-      <DependentUpon>202311291544466_seedingMigrationTestFinal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291551104_debugging.cs" />
-    <Compile Include="Migrations\202311291551104_debugging.designer.cs">
-      <DependentUpon>202311291551104_debugging.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291559200_seedingMigration5PM.cs" />
-    <Compile Include="Migrations\202311291559200_seedingMigration5PM.designer.cs">
-      <DependentUpon>202311291559200_seedingMigration5PM.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291612494_seedingMigrationTest.cs" />
-    <Compile Include="Migrations\202311291612494_seedingMigrationTest.designer.cs">
-      <DependentUpon>202311291612494_seedingMigrationTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291614222_anotherSeedingTestMigration.cs" />
-    <Compile Include="Migrations\202311291614222_anotherSeedingTestMigration.designer.cs">
-      <DependentUpon>202311291614222_anotherSeedingTestMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291617382_finalTouchesSeeding.cs" />
-    <Compile Include="Migrations\202311291617382_finalTouchesSeeding.designer.cs">
-      <DependentUpon>202311291617382_finalTouchesSeeding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291622444_another2TestMigrationSeeding.cs" />
-    <Compile Include="Migrations\202311291622444_another2TestMigrationSeeding.designer.cs">
-      <DependentUpon>202311291622444_another2TestMigrationSeeding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311291635105_removingDuplicates.cs" />
-    <Compile Include="Migrations\202311291635105_removingDuplicates.designer.cs">
-      <DependentUpon>202311291635105_removingDuplicates.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311292137113_testingJsonPath.cs" />
-    <Compile Include="Migrations\202311292137113_testingJsonPath.designer.cs">
-      <DependentUpon>202311292137113_testingJsonPath.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311292139496_relativePathMigration.cs" />
-    <Compile Include="Migrations\202311292139496_relativePathMigration.designer.cs">
-      <DependentUpon>202311292139496_relativePathMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311292141469_anotherPathTest.cs" />
-    <Compile Include="Migrations\202311292141469_anotherPathTest.designer.cs">
-      <DependentUpon>202311292141469_anotherPathTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311292143321_relativePathFinalMigration.cs" />
-    <Compile Include="Migrations\202311292143321_relativePathFinalMigration.designer.cs">
-      <DependentUpon>202311292143321_relativePathFinalMigration.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202311301228054_typesTableMigration.cs" />
     <Compile Include="Migrations\202311301228054_typesTableMigration.designer.cs">
       <DependentUpon>202311301228054_typesTableMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301232441_typesUpdateDatabase.cs" />
-    <Compile Include="Migrations\202311301232441_typesUpdateDatabase.designer.cs">
-      <DependentUpon>202311301232441_typesUpdateDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301235422_typesDatabaseFix.cs" />
-    <Compile Include="Migrations\202311301235422_typesDatabaseFix.designer.cs">
-      <DependentUpon>202311301235422_typesDatabaseFix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301249534_testTypesDatabase.cs" />
-    <Compile Include="Migrations\202311301249534_testTypesDatabase.designer.cs">
-      <DependentUpon>202311301249534_testTypesDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301318346_objectTypesMigration.cs" />
-    <Compile Include="Migrations\202311301318346_objectTypesMigration.designer.cs">
-      <DependentUpon>202311301318346_objectTypesMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301323438_objectTypesChanges2.cs" />
-    <Compile Include="Migrations\202311301323438_objectTypesChanges2.designer.cs">
-      <DependentUpon>202311301323438_objectTypesChanges2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301326391_objectTypesChanges3.cs" />
-    <Compile Include="Migrations\202311301326391_objectTypesChanges3.designer.cs">
-      <DependentUpon>202311301326391_objectTypesChanges3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311301333053_objectTypeCHanges4.cs" />
-    <Compile Include="Migrations\202311301333053_objectTypeCHanges4.designer.cs">
-      <DependentUpon>202311301333053_objectTypeCHanges4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -441,68 +361,8 @@
     <EmbeddedResource Include="Migrations\202311291459040_dataSeedingTest.resx">
       <DependentUpon>202311291459040_dataSeedingTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291509203_seedingTest.resx">
-      <DependentUpon>202311291509203_seedingTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291544466_seedingMigrationTestFinal.resx">
-      <DependentUpon>202311291544466_seedingMigrationTestFinal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291551104_debugging.resx">
-      <DependentUpon>202311291551104_debugging.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291559200_seedingMigration5PM.resx">
-      <DependentUpon>202311291559200_seedingMigration5PM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291612494_seedingMigrationTest.resx">
-      <DependentUpon>202311291612494_seedingMigrationTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291614222_anotherSeedingTestMigration.resx">
-      <DependentUpon>202311291614222_anotherSeedingTestMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291617382_finalTouchesSeeding.resx">
-      <DependentUpon>202311291617382_finalTouchesSeeding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291622444_another2TestMigrationSeeding.resx">
-      <DependentUpon>202311291622444_another2TestMigrationSeeding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311291635105_removingDuplicates.resx">
-      <DependentUpon>202311291635105_removingDuplicates.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311292137113_testingJsonPath.resx">
-      <DependentUpon>202311292137113_testingJsonPath.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311292139496_relativePathMigration.resx">
-      <DependentUpon>202311292139496_relativePathMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311292141469_anotherPathTest.resx">
-      <DependentUpon>202311292141469_anotherPathTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311292143321_relativePathFinalMigration.resx">
-      <DependentUpon>202311292143321_relativePathFinalMigration.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311301228054_typesTableMigration.resx">
       <DependentUpon>202311301228054_typesTableMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301232441_typesUpdateDatabase.resx">
-      <DependentUpon>202311301232441_typesUpdateDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301235422_typesDatabaseFix.resx">
-      <DependentUpon>202311301235422_typesDatabaseFix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301249534_testTypesDatabase.resx">
-      <DependentUpon>202311301249534_testTypesDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301318346_objectTypesMigration.resx">
-      <DependentUpon>202311301318346_objectTypesMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301323438_objectTypesChanges2.resx">
-      <DependentUpon>202311301323438_objectTypesChanges2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301326391_objectTypesChanges3.resx">
-      <DependentUpon>202311301326391_objectTypesChanges3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311301333053_objectTypeCHanges4.resx">
-      <DependentUpon>202311301333053_objectTypeCHanges4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
