@@ -7,17 +7,45 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
+using CulturallyHistoricalObjectsWebApp.Service;
 
 namespace CulturallyHistoricalObjectsWebApp.Controllers
 {
     public class HistoricalCulturalObjectsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        private FilterService filterService = new FilterService();
+        private DistanceService distanceService = new DistanceService();
 
         // GET: HistoricalCulturalObjects
         public ActionResult Index()
         {
-            return View();
+            FilterDTO filterDTO= new FilterDTO();
+            filterDTO.types = db.objectTypes.ToList();
+            return View(filterDTO);
+        }
+
+
+        [HttpPost]
+        public ActionResult Filter(FilterDTO model)
+        {
+            if (Request.Form["actionType"].Equals("FindAll"))
+            {
+                return RedirectToAction("FindAll", model);
+            }
+            return RedirectToAction("FindClosest", model);
+        }
+
+        public ActionResult FindAll(FilterDTO model)
+        {
+            return View(filterService.filterObjects(model));
+        }
+
+        public ActionResult FindClosest(FilterDTO model)
+        {
+            List<HistoricalCulturalObjects> objects = filterService.filterObjects(model);
+
+            return View(distanceService.distance(model, objects));
         }
 
         // GET: HistoricalCulturalObjects/Details/5

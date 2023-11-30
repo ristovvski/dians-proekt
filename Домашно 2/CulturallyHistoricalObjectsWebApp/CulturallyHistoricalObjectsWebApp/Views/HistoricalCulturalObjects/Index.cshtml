@@ -1,28 +1,91 @@
-﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCulturalObjects
+﻿@model CulturallyHistoricalObjectsWebApp.Models.FilterDTO
 
 @{
     ViewBag.Title = "Index";
 }
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#findAllBtn').click(function () {
+            $('#actionType').val('FindAll');
+        });
+
+        $('#findClosestBtn').click(function () {
+            // Set the action type
+            $('#actionType').val('FindClosest');
+
+            // Retrieve geolocation if available
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var userLatitude = position.coords.latitude;
+                    var userLongitude = position.coords.longitude;
+
+                    // Set the values of hidden inputs
+                    $('<input>').attr({
+                        type: 'hidden',
+                        id: 'userLatitude',
+                        name: 'userLatitude',
+                        value: userLatitude
+                    }).appendTo('form');
+
+                    $('<input>').attr({
+                        type: 'hidden',
+                        id: 'userLongitude',
+                        name: 'userLongitude',
+                        value: userLongitude
+                    }).appendTo('form');
+
+                    // Submit the form after setting the geolocation values
+                    $('form').submit();
+                });
+            } else {
+                alert("Your browser doesn't support Geolocation which is needed for the Find Closest option");
+            }
+            return false; // Prevent the default form submission
+        });
+    });
+
+    function showPosition(position) {
+        var userLatitude = position.coords.latitude;
+        var userLongitude = position.coords.longitude;
+
+        // Append hidden input fields with user's latitude and longitude
+        $('<input>').attr({
+            type: 'hidden',
+            id: 'userLatitude',
+            name: 'userLatitude',
+            value: userLatitude
+        }).appendTo('form');
+
+        $('<input>').attr({
+            type: 'hidden',
+            id: 'userLongitude',
+            name: 'userLongitude',
+            value: userLongitude
+        }).appendTo('form');
+    }
+</script>
+
 <div style="display: flex;">
     <div style="width: 40%; align-items: center; justify-content: center">
         <h2>Filter</h2>
-        @using (Html.BeginForm("FindClosest", "HistoricalCulturalObjects", FormMethod.Post))
+        @using (Html.BeginForm("Filter", "HistoricalCulturalObjects", FormMethod.Post))
         {
             <div class="form-group">
                 @Html.LabelFor(model => model.name, "Name:")
                 @Html.TextBoxFor(model => model.name, new { @class = "form-control", id = "name" })
             </div>
             <div class="form-group">
-                @Html.LabelFor(model => model.type, "Category:")
-                @Html.DropDownListFor(model => model.type, new List<SelectListItem>
-                {
-                    new SelectListItem { Text = "Category 1", Value = "Category1" },
-                    new SelectListItem { Text = "Category 2", Value = "Category2" }
-                }, "Select Category", new { @class = "form-control", id = "category" })
+                @Html.Label("Select category")
+                @Html.DropDownListFor(model => model.type_id, new SelectList(Model.types, "id", "type"), "Select category")
             </div>
-            <button type="submit" class="btn btn-primary">Find all</button>
-            <button type="submit" name="findClosest" value="true" class="btn btn-danger">Find closest</button>
+
+            @Html.Hidden("actionType", "", new { id = "actionType" })
+
+            <button type="submit" id="findAllBtn" class="btn btn-success">Find All</button>
+            <button type="submit" id="findClosestBtn" class="btn btn-success">Find Closest</button>
         }
     </div>
 </div>

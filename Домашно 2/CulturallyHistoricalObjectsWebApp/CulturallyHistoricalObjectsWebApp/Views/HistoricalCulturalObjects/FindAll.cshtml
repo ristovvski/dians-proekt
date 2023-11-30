@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CulturallyHistoricalObjectsWebApp.Models.HistoricalCulturalObjects>
+
+@{
+    ViewBag.Title = "FindClosest";
+}
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+
+<h2>All objects</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Longitude</th>
+            <th>Latitude</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.name</td>
+                <td>@obj.lon</td>
+                <td>@obj.lat</td>
+                <td>@(obj.type != null ? obj.type.type : "")</td>
+            </tr>
+        }
+    </tbody>
+</table>

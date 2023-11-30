@@ -308,12 +308,16 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ClosestDTO.cs" />
+    <Compile Include="Models\FilterDTO.cs" />
     <Compile Include="Models\HCObjectsDTO.cs" />
     <Compile Include="Models\HistoricalCulturalObjects.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ObjectTypesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\DistanceService.cs" />
+    <Compile Include="Service\FilterService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -394,6 +398,8 @@
     <Content Include="Views\HistoricalCulturalObjects\Edit.cshtml" />
     <Content Include="Views\HistoricalCulturalObjects\Index.cshtml" />
     <Content Include="Views\Account\AddUserToRole.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\FindClosest.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\FindAll.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
