@@ -24,16 +24,49 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
-
-            context.Database.ExecuteSqlCommand("DELETE FROM HistoricalCulturalObjects");
-
             string relativePath = @"Content\json_data\result.json";
             string fullPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\", relativePath));
             AppDbSeeding appSeeding = new AppDbSeeding();
-            List<HistoricalCulturalObjects> objects = appSeeding.parseJson(fullPath);
-            foreach (var obj in objects)
+            List<HCObjectsDTO> objectsDTO = appSeeding.parseJson(fullPath);
+            List<String> typeStringified = appSeeding.getStringTypes(objectsDTO);
+
+            // Extract unique types
+            List<string> uniqueTypes = typeStringified.Distinct().ToList();
+
+            // Populate ObjectTypesModel table
+            foreach (string type in uniqueTypes)
             {
-                context.culturalObjects.AddOrUpdate(x => x.name, obj);
+                // Check if the type exists in the database
+                bool typeExists = context.objectTypes.Any(x => x.type == type);
+
+                if (!typeExists)
+                {
+                    ObjectTypesModel newType = new ObjectTypesModel(type);
+                    context.objectTypes.Add(newType);
+                }
+            }
+
+            context.SaveChanges();
+
+            int i = 0;
+            foreach (var obj in objectsDTO)
+            {
+                HistoricalCulturalObjects tmp = new HistoricalCulturalObjects();
+                tmp.name = obj.name;
+                tmp.lat = obj.lat;
+                tmp.lon = obj.lon;
+
+                // Retrieve ObjectTypesModel instance based on the type string
+                ObjectTypesModel objectType = context.objectTypes.SingleOrDefault(x => x.type == typeStringified[i]);
+
+                if (objectType != null)
+                {
+                    tmp.type = objectType;
+
+                }
+
+                context.culturalObjects.AddOrUpdate(x => x.name, tmp);
+                i++;
             }
             context.SaveChanges();
         }

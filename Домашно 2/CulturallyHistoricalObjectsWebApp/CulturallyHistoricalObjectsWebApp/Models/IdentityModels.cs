@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Hosting;
@@ -26,6 +27,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
     {
 
         public DbSet<HistoricalCulturalObjects> culturalObjects { get; set; }
+        public DbSet<ObjectTypesModel> objectTypes { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

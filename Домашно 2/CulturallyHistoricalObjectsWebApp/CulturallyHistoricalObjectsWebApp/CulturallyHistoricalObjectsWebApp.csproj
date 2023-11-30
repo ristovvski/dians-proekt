@@ -274,11 +274,29 @@
     <Compile Include="Migrations\202311292143321_relativePathFinalMigration.designer.cs">
       <DependentUpon>202311292143321_relativePathFinalMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311301228054_typesTableMigration.cs" />
+    <Compile Include="Migrations\202311301228054_typesTableMigration.designer.cs">
+      <DependentUpon>202311301228054_typesTableMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311301232441_typesUpdateDatabase.cs" />
+    <Compile Include="Migrations\202311301232441_typesUpdateDatabase.designer.cs">
+      <DependentUpon>202311301232441_typesUpdateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311301235422_typesDatabaseFix.cs" />
+    <Compile Include="Migrations\202311301235422_typesDatabaseFix.designer.cs">
+      <DependentUpon>202311301235422_typesDatabaseFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311301249534_testTypesDatabase.cs" />
+    <Compile Include="Migrations\202311301249534_testTypesDatabase.designer.cs">
+      <DependentUpon>202311301249534_testTypesDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\HCObjectsDTO.cs" />
     <Compile Include="Models\HistoricalCulturalObjects.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ObjectTypesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -439,6 +457,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311292143321_relativePathFinalMigration.resx">
       <DependentUpon>202311292143321_relativePathFinalMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301228054_typesTableMigration.resx">
+      <DependentUpon>202311301228054_typesTableMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301232441_typesUpdateDatabase.resx">
+      <DependentUpon>202311301232441_typesUpdateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301235422_typesDatabaseFix.resx">
+      <DependentUpon>202311301235422_typesDatabaseFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311301249534_testTypesDatabase.resx">
+      <DependentUpon>202311301249534_testTypesDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

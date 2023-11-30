@@ -145,3 +145,7 @@ C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalOb
 C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.relativePathMigration.resources
 C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.anotherPathTest.resources
 C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.relativePathFinalMigration.resources
+C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.typesTableMigration.resources
+C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.typesUpdateDatabase.resources
+C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.typesDatabaseFix.resources
+C:\Users\vanes\source\repos\dians-proekt\Домашно 2\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.testTypesDatabase.resources

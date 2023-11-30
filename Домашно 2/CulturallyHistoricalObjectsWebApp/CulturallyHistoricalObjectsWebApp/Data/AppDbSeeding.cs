@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
+using System.Linq;
 using System.Web;
 using System.Web.Hosting;
 using CulturallyHistoricalObjectsWebApp.Models;
@@ -12,16 +13,16 @@ namespace CulturallyHistoricalObjectsWebApp.Data
 {
     public class AppDbSeeding { 
 
-        public List<HistoricalCulturalObjects> parseJson(string filePath)
+        public List<HCObjectsDTO> parseJson(string filePath)
         {
-            List<HistoricalCulturalObjects> historicalObjects = new List<HistoricalCulturalObjects>();
+            List<HCObjectsDTO> historicalObjects = new List<HCObjectsDTO>();
 
             try
             {
                 string jsonString = File.ReadAllText(filePath);
 
                 // Deserialize the JSON array into a list of HistoricalObject instances
-                historicalObjects = JsonConvert.DeserializeObject<List<HistoricalCulturalObjects>>(jsonString);
+                historicalObjects = JsonConvert.DeserializeObject<List<HCObjectsDTO>>(jsonString);
             }
             catch (FileNotFoundException)
             {
@@ -35,6 +36,13 @@ namespace CulturallyHistoricalObjectsWebApp.Data
             }
 
             return historicalObjects;
+        }
+
+        public List<String> getStringTypes(List<HCObjectsDTO> objects)
+        {
+            List<string> typesList = objects.Select(o => o.ToString()).ToList();
+
+            return typesList;
         }
     }
 

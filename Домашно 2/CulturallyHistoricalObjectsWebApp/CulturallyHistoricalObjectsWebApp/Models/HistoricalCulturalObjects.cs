@@ -13,7 +13,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
 
         public String name { get; set; }
 
-        public String type {  get; set; }
+        public ObjectTypesModel type {  get; set; }
 
         public double lon { get; set; }
 
