@@ -1,14 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Домашно 2",
-    "\\Домашно 2\\CulturallyHistoricalObjectsWebApp",
-    "\\Домашно 2\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp",
-    "\\Домашно 2\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers",
-    "\\Домашно 2\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Service",
-    "\\Домашно 2\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Views",
-    "\\Домашно 2\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Views\\HistoricalCulturalObjects"
+    "\\Домашно 2"
   ],
-  "SelectedNode": "\\Домашно 2\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Views\\HistoricalCulturalObjects\\Index.cshtml",
+  "SelectedNode": "\\Домашно 2\\technical prototype",
   "PreviewInSolutionExplorer": false
 }
