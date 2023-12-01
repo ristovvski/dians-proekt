@@ -1,0 +1,274 @@
+{
+  "elements": [
+    {
+      "lon": 21.4174425,
+      "lat": 42.005709,
+      "type": "museum",
+      "name": "Природонаучен Музеј"
+    },
+    {
+      "lon": 21.3001786,
+      "lat": 42.0690911,
+      "type": "place_of_worship",
+      "name": "Манастир Св. Ѓорѓија"
+    },
+    {
+      "lon": 22.8566138,
+      "lat": 41.7077548,
+      "type": "museum",
+      "name": "Музеј на град Берово"
+    },
+    {
+      "lon": 22.859018,
+      "lat": 41.701039,
+      "type": "place_of_worship",
+      "name": "Манастир Св. Архангел Михаил"
+    },
+    {
+      "lon": 22.0163228,
+      "lat": 41.4343634,
+      "type": "museum",
+      "name": "Музеј Галерија Кавадарци"
+    },
+    {
+      "lon": 20.7961416,
+      "lat": 41.112361,
+      "type": "museum",
+      "name": "Куќа на Робевци"
+    },
+    {
+      "lon": 21.4314474,
+      "lat": 41.9959035,
+      "type": "statue",
+      "name": "Споменик на Александар Македонски"
+    },
+    {
+      "lon": 22.4677492,
+      "lat": 41.6350875,
+      "type": "place_of_worship",
+      "name": "Св.Тројца"
+    },
+    {
+      "lon": 22.5049622,
+      "lat": 41.8841902,
+      "type": "museum",
+      "name": "Museum Teracotta"
+    },
+    {
+      "lon": 20.7415162,
+      "lat": 40.9131005,
+      "type": "place_of_worship",
+      "name": "Црква Света Петка"
+    },
+    {
+      "lon": 21.2991931,
+      "lat": 41.9505936,
+      "type": "place_of_worship",
+      "name": "Манастир Св. Андреј"
+    },
+    {
+      "lon": 21.3042042,
+      "lat": 41.951833,
+      "type": "place_of_worship",
+      "name": "Св. Никола"
+    },
+    {
+      "lon": 22.7221034,
+      "lat": 41.1871817,
+      "type": "museum",
+      "name": "Музеј на Дојран"
+    },
+    {
+      "lon": 21.4349949,
+      "lat": 41.9984602,
+      "type": "statue",
+      "name": "Филип II Македонски"
+    },
+    {
+      "lon": 21.4254968,
+      "lat": 41.9983057,
+      "type": "statue",
+      "name": "Св. Климент Охридски"
+    },
+    {
+      "lon": 21.437162,
+      "lat": 41.9993163,
+      "type": "statue",
+      "name": "Скендербег"
+    },
+    {
+      "lon": 22.2447656,
+      "lat": 41.4085959,
+      "type": "museum",
+      "name": "Museum of Wine"
+    },
+    {
+      "lon": 21.6864385,
+      "lat": 41.8289199,
+      "type": "place_of_worship",
+      "name": "Manastir Sveta Bogorodica"
+    },
+    {
+      "lon": 20.8043628,
+      "lat": 41.0738678,
+      "type": "place_of_worship",
+      "name": "Св. Стефан"
+    },
+    {
+      "lon": 20.6776078,
+      "lat": 41.1805738,
+      "type": "museum",
+      "name": "Д-р Никола Незлобински"
+    },
+    {
+      "lon": 21.6894737,
+      "lat": 41.8286581,
+      "type": "place_of_worship",
+      "name": "Manastir Sveti Jovan"
+    },
+    {
+      "lon": 22.0181317,
+      "lat": 41.4184594,
+      "type": "museum",
+      "name": "Спомен куќа на Страшо Пинџур"
+    },
+    {
+      "lon": 22.3348959,
+      "lat": 42.2020133,
+      "type": "museum",
+      "name": "City Museum"
+    },
+    {
+      "lon": 22.5651714,
+      "lat": 41.4748537,
+      "type": "place_of_worship",
+      "name": "Манастир Св. Богородица Елеуса"
+    },
+    {
+      "lon": 22.5902413,
+      "lat": 41.4505759,
+      "type": "place_of_worship",
+      "name": "Манастир Св. Леонтиј"
+    },
+    {
+      "lon": 22.7729986,
+      "lat": 41.9664768,
+      "type": "museum",
+      "name": "Музеј на град Делчево"
+    },
+    {
+      "lon": 21.426153,
+      "lat": 41.9952169,
+      "type": "statue",
+      "name": "Josip Broz Tito"
+    },
+    {
+      "lon": 22.1831257,
+      "lat": 42.0758863,
+      "type": "place_of_worship",
+      "name": "Св. Јован Крстител"
+    },
+    {
+      "lon": 21.4339766,
+      "lat": 41.9977079,
+      "type": "statue",
+      "name": "Св. Кирил и Методиј"
+    },
+    {
+      "lon": 21.4341509,
+      "lat": 41.9975624,
+      "type": "statue",
+      "name": "Св. Климент Охридски и Наум Охридски Чудотворец"
+    },
+    {
+      "lon": 21.4313414,
+      "lat": 41.9953917,
+      "type": "statue",
+      "name": "Цар Самоил"
+    },
+    {
+      "lon": 21.4321474,
+      "lat": 41.9964949,
+      "type": "statue",
+      "name": "Даме Груев"
+    },
+    {
+      "lon": 21.4323054,
+      "lat": 41.9968799,
+      "type": "statue",
+      "name": "Јустинијан I"
+    },
+    {
+      "lon": 21.4344182,
+      "lat": 41.9979046,
+      "type": "statue",
+      "name": "Олимпија"
+    },
+    {
+      "lon": 21.3415263,
+      "lat": 41.006774,
+      "type": "place_of_worship",
+      "name": "Св. Троица"
+    },
+    {
+      "lon": 20.8227937,
+      "lat": 41.0881175,
+      "type": "place_of_worship",
+      "name": "Свети Тројца Архиереи"
+    },
+    {
+      "lon": 21.0506131,
+      "lat": 41.0240503,
+      "type": "museum",
+      "name": "Eтнолошки музеј"
+    },
+    {
+      "lon": 21.4323793,
+      "lat": 41.9963577,
+      "type": "statue",
+      "name": "Гоце Делчев"
+    },
+    {
+      "lon": 20.652723,
+      "lat": 41.5939237,
+      "type": "museum",
+      "name": "Museum of Galichnik\u0027s cultural heritage"
+    },
+    {
+      "lon": 21.4293515,
+      "lat": 41.9950349,
+      "type": "statue",
+      "name": "Споменик на Христо Узунов"
+    },
+    {
+      "lon": 21.3865879,
+      "lat": 41.9989569,
+      "type": "museum",
+      "name": "Galerija RA"
+    },
+    {
+      "lon": 22.6364291,
+      "lat": 41.4354106,
+      "type": "museum",
+      "name": "Museum Strumica"
+    },
+    {
+      "lon": 22.3621503,
+      "lat": 42.2089207,
+      "type": "place_of_worship",
+      "name": "Saint Joachim Osogovski"
+    },
+    {
+      "lon": 22.5220207,
+      "lat": 41.1488082,
+      "type": "museum",
+      "name": "Vardarski Rid"
+    },
+    {
+      "lon": 20.7970433,
+      "lat": 41.1123275,
+      "type": "museum",
+      "name": "House of Lambeski"
+    }
+  ]
+}
