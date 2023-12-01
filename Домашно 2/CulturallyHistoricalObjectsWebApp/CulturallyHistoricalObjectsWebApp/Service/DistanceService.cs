@@ -8,7 +8,6 @@ namespace CulturallyHistoricalObjectsWebApp.Service
 {
     public class DistanceService
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
 
         static double toRadians(double angleIn10thofaDegree)
         {
