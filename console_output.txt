@@ -1,0 +1,316 @@
+Name: Питу Гули, Type: monument, Latitude: 41.9936737, Longitude: 21.433319, Region: Skopje Region
+Name: Гоце Делчев, Type: monument, Latitude: 42.0032812, Longitude: 21.4233737, Region: Skopje Region
+Name: Влез на Скопското кале, Type: city_gate, Latitude: 42.0008716, Longitude: 21.4338778, Region: Skopje Region
+Name: Тетовско Кале, Type: ruins, Latitude: 42.0195738, Longitude: 20.960153, Region: Polog Region
+Name: Костурница, Type: monument, Latitude: 41.4325212, Longitude: 22.0228463, Region: Vardar Region
+Name: Лихнид, Type: archaeological_site, Latitude: 41.1155576, Longitude: 20.7914836, Region: Southwestern Region
+Name: Мечкин Камен, Type: monument, Latitude: 41.3377228, Longitude: 21.257898, Region: Vardar Region
+Name: Слива, Type: monument, Latitude: 41.3880768, Longitude: 21.2273776, Region: Vardar Region
+Name: Споменик на слободата, Type: monument, Latitude: 41.9188903, Longitude: 22.4069917, Region: Skopje Region
+Name: WWII Battle - 17th Macedonian Brigade ws Bulgarian army, Type: monument, Latitude: 42.2916094, Longitude: 22.3507979, Region: Polog Region
+Name: Споменик на Револуцијата, Type: monument, Latitude: 41.1776616, Longitude: 20.679835, Region: Southwestern Region
+Name: Споменик на Александар Македонски, Type: monument, Latitude: 41.9959035, Longitude: 21.4314474, Region: Skopje Region
+Name: 5, Type: boundary_stone, Latitude: 41.363211, Longitude: 22.9650942, Region: Eastern Region
+Name: Lukov, Type: memorial, Latitude: 41.6346281, Longitude: 20.5620379, Region: Polog Region
+Name: Rimska crkva, Type: archaeological_site, Latitude: 42.0586697, Longitude: 21.3527926, Region: Skopje Region
+Name: Давина Кула, Type: archaeological_site, Latitude: 42.0843452, Longitude: 21.3548716, Region: Skopje Region
+Name: Голема Кула - Кучково, Type: archaeological_site, Latitude: 42.0587494, Longitude: 21.2786993, Region: Skopje Region
+Name: Мала Кула - Кучково, Type: archaeological_site, Latitude: 42.0585741, Longitude: 21.2844339, Region: Skopje Region
+Name: 4, Type: boundary_stone, Latitude: 41.3534717, Longitude: 22.9655541, Region: Eastern Region
+Name: 6, Type: boundary_stone, Latitude: 41.3649798, Longitude: 22.964952, Region: Eastern Region
+Name: 7, Type: boundary_stone, Latitude: 41.3667003, Longitude: 22.9645721, Region: Eastern Region
+Name: 8, Type: boundary_stone, Latitude: 41.3682443, Longitude: 22.9643552, Region: Eastern Region
+Name: 9, Type: boundary_stone, Latitude: 41.3692174, Longitude: 22.9640182, Region: Eastern Region
+Name: 10, Type: boundary_stone, Latitude: 41.3704535, Longitude: 22.9637614, Region: Eastern Region
+Name: 11, Type: boundary_stone, Latitude: 41.371345, Longitude: 22.963565, Region: Eastern Region
+Name: 12, Type: boundary_stone, Latitude: 41.3721284, Longitude: 22.9631755, Region: Eastern Region
+Name: 13, Type: boundary_stone, Latitude: 41.3728977, Longitude: 22.9630541, Region: Eastern Region
+Name: 14, Type: boundary_stone, Latitude: 41.3739433, Longitude: 22.9628253, Region: Eastern Region
+Name: 15, Type: boundary_stone, Latitude: 41.3755256, Longitude: 22.9632889, Region: Eastern Region
+Name: 16, Type: boundary_stone, Latitude: 41.3786524, Longitude: 22.9621967, Region: Eastern Region
+Name: 19, Type: boundary_stone, Latitude: 41.3839589, Longitude: 22.9628726, Region: Eastern Region
+Name: 20, Type: boundary_stone, Latitude: 41.3859009, Longitude: 22.9631941, Region: Eastern Region
+Name: 21, Type: boundary_stone, Latitude: 41.3891975, Longitude: 22.9642834, Region: Eastern Region
+Name: 22, Type: boundary_stone, Latitude: 41.3931081, Longitude: 22.9667134, Region: Eastern Region
+Name: 25, Type: boundary_stone, Latitude: 41.3964028, Longitude: 22.966126, Region: Eastern Region
+Name: 27, Type: boundary_stone, Latitude: 41.4070803, Longitude: 22.9615881, Region: Eastern Region
+Name: 28, Type: boundary_stone, Latitude: 41.4174975, Longitude: 22.9520216, Region: Eastern Region
+Name: 30, Type: boundary_stone, Latitude: 41.4400834, Longitude: 22.9746504, Region: Eastern Region
+Name: Куцолиница / 86, Type: boundary_stone, Latitude: 42.1102442, Longitude: 22.5899869, Region: Eastern Region
+Name: 87, Type: boundary_stone, Latitude: 42.1119645, Longitude: 22.5770819, Region: Eastern Region
+Name: 90, Type: boundary_stone, Latitude: 42.1551091, Longitude: 22.5104573, Region: Eastern Region
+Name: Китка, Type: boundary_stone, Latitude: 42.3089612, Longitude: 22.3705411, Region: Polog Region
+Name: Руен, Type: boundary_stone, Latitude: 42.1580093, Longitude: 22.5162744, Region: Eastern Region
+Name: Zena, Type: monument, Latitude: 42.1355189, Longitude: 21.7200501, Region: Skopje Region
+Name: Gradiste kaj s.Brazda, Type: archaeological_site, Latitude: 42.0766913, Longitude: 21.398848, Region: Skopje Region
+Name: Манастир Св. Андреј, Type: monument, Latitude: 41.9505936, Longitude: 21.2991931, Region: Skopje Region
+Name: Филип Втори, Type: monument, Latitude: 42.0017233, Longitude: 21.4617772, Region: Skopje Region
+Name: Филип II Македонски, Type: memorial, Latitude: 41.9984602, Longitude: 21.4349949, Region: Skopje Region
+Name: Св. Климент Охридски, Type: memorial, Latitude: 41.9983057, Longitude: 21.4254968, Region: Skopje Region
+Name: Скендербег, Type: memorial, Latitude: 41.9993163, Longitude: 21.437162, Region: Skopje Region
+Name: Маркова Нога, Type: monument, Latitude: 40.8570205, Longitude: 21.1195933, Region: Southwestern Region
+Name: Костоперска Карпа, Type: archaeological_site, Latitude: 42.1706665, Longitude: 21.809838, Region: Skopje Region
+Name: Кокино, Type: archaeological_site, Latitude: 42.2633818, Longitude: 21.953118, Region: Polog Region
+Name: 2, Type: boundary_stone, Latitude: 41.340338, Longitude: 22.9351752, Region: Eastern Region
+Name: 3, Type: boundary_stone, Latitude: 41.3524982, Longitude: 22.9527929, Region: Eastern Region
+Name: Јосип Броз - Тито, Type: monument, Latitude: 42.1355778, Longitude: 21.7194275, Region: Skopje Region
+Name: Марков Град, Type: ruins, Latitude: 41.4094203, Longitude: 22.2541295, Region: Vardar Region
+Name: Меморијален центар АСНОМ, Type: memorial, Latitude: 42.2782511, Longitude: 21.8500367, Region: Polog Region
+Name: Sahat Kula, Type: monument, Latitude: 41.794932, Longitude: 20.9108574, Region: Polog Region
+Name: Орашко Кале, Type: ruins, Latitude: 42.1068795, Longitude: 21.1545235, Region: Skopje Region
+Name: Саат кула, Type: monument, Latitude: 41.5119269, Longitude: 20.9702432, Region: Polog Region
+Name: Саат кула, Type: monument, Latitude: 41.7140782, Longitude: 21.7840512, Region: Polog Region
+Name: Isar / Idomenae, Type: archaeological_site, Latitude: 41.2775784, Longitude: 22.4937679, Region: Vardar Region
+Name: Куде сат, Type: monument, Latitude: 42.1346962, Longitude: 21.7192303, Region: Skopje Region
+Name: Ножот, Type: memorial, Latitude: 41.4293251, Longitude: 21.7629669, Region: Vardar Region
+Name: Народен Херој Кузман Јосифоски-Питу, Type: monument, Latitude: 41.3451182, Longitude: 21.5519842, Region: Vardar Region
+Name: Пеце Атанасоски, Type: monument, Latitude: 41.3451518, Longitude: 21.554267, Region: Vardar Region
+Name: Ѓорче Петров, Type: monument, Latitude: 41.3452617, Longitude: 21.5522173, Region: Vardar Region
+Name: Питу Гули, Type: tomb, Latitude: 41.3748344, Longitude: 21.2480535, Region: Vardar Region
+Name: Тоше Проески, Type: tomb, Latitude: 41.3748686, Longitude: 21.2482546, Region: Vardar Region
+Name: Никола Карев, Type: monument, Latitude: 41.3736665, Longitude: 21.2463296, Region: Vardar Region
+Name: 18, Type: boundary_stone, Latitude: 41.3818263, Longitude: 22.9625526, Region: Eastern Region
+Name: 26, Type: boundary_stone, Latitude: 41.3969922, Longitude: 22.965619, Region: Eastern Region
+Name: 31, Type: boundary_stone, Latitude: 41.4533981, Longitude: 22.9762168, Region: Eastern Region
+Name: 32, Type: boundary_stone, Latitude: 41.4723462, Longitude: 22.9662076, Region: Eastern Region
+Name: 34, Type: boundary_stone, Latitude: 41.4930169, Longitude: 22.9585216, Region: Eastern Region
+Name: 35, Type: boundary_stone, Latitude: 41.5295396, Longitude: 22.9605185, Region: Eastern Region
+Name: 36, Type: boundary_stone, Latitude: 41.5423737, Longitude: 22.9604199, Region: Eastern Region
+Name: Стефан Наумов-Стив, Type: memorial, Latitude: 41.024615, Longitude: 21.3368929, Region: Southwestern Region
+Name: Споменик на Питу Гули, Type: monument, Latitude: 41.3649692, Longitude: 21.2497316, Region: Vardar Region
+Name: Наум Наумоски-Борче, Type: monument, Latitude: 41.3653856, Longitude: 21.2484409, Region: Vardar Region
+Name: Римски театар, Type: ruins, Latitude: 41.5516379, Longitude: 21.9751675, Region: Polog Region
+Name: 99.4-053, Type: locomotive, Latitude: 41.5126479, Longitude: 20.951411, Region: Polog Region
+Name: Два Коња, Type: monument, Latitude: 41.1458586, Longitude: 22.5001795, Region: Eastern Region
+Name: Цоцев Камен, Type: archaeological_site, Latitude: 42.0836218, Longitude: 21.9862589, Region: Skopje Region
+Name: Преспанско Советување, Type: monument, Latitude: 40.9765203, Longitude: 20.9119981, Region: Southwestern Region
+Name: Карпалак, Type: monument, Latitude: 41.3475544, Longitude: 21.5564074, Region: Vardar Region
+Name: Zebrnjak, Type: memorial, Latitude: 42.1491368, Longitude: 21.7853235, Region: Skopje Region
+Name: Свети Климент Охридски, Type: monument, Latitude: 41.1126936, Longitude: 20.7995376, Region: Southwestern Region
+Name: Свети Кирил и Методиј, Type: monument, Latitude: 41.1120476, Longitude: 20.799994, Region: Southwestern Region
+Name: Свети Наум Охридски Чудотворец, Type: monument, Latitude: 41.1122955, Longitude: 20.7990226, Region: Southwestern Region
+Name: Долна Порта, Type: city_gate, Latitude: 41.1124606, Longitude: 20.7977703, Region: Southwestern Region
+Name: Мачка камен, Type: archaeological_site, Latitude: 42.0853984, Longitude: 21.9627449, Region: Skopje Region
+Name: Христо Узунов, Type: monument, Latitude: 41.4182291, Longitude: 21.0770931, Region: Vardar Region
+Name: Sv. Nikola, Type: wayside_shrine, Latitude: 41.0596796, Longitude: 20.8135106, Region: Southwestern Region
+Name: Споменик на жртви од НОВ, Type: monument, Latitude: 41.9062629, Longitude: 20.9636151, Region: Polog Region
+Name: Александар Македонски, Type: monument, Latitude: 41.3460556, Longitude: 21.5524989, Region: Vardar Region
+Name: Методија Андонов-Ченто, Type: monument, Latitude: 41.3462544, Longitude: 21.5528281, Region: Vardar Region
+Name: Св. Никола, Type: monument, Latitude: 41.3462194, Longitude: 21.553243, Region: Vardar Region
+Name: Масакр кај Пуста Кула, Type: memorial, Latitude: 41.822914, Longitude: 21.7360635, Region: Skopje Region
+Name: Карпалак 2001, Type: monument, Latitude: 41.3434323, Longitude: 21.5479723, Region: Vardar Region
+Name: Крипта, Type: monument, Latitude: 41.3341123, Longitude: 21.554646, Region: Vardar Region
+Name: Итар Пејо, Type: monument, Latitude: 41.345456, Longitude: 21.5548417, Region: Vardar Region
+Name: Dedo Jakim - Mill, Type: monument, Latitude: 41.975162, Longitude: 22.8187714, Region: Eastern Region
+Name: Ilin Kamen, Type: monument, Latitude: 41.9769054, Longitude: 22.8193451, Region: Eastern Region
+Name: Гоце Делчев (Биста), Type: monument, Latitude: 41.9668611, Longitude: 22.7768724, Region: Eastern Region
+Name: Гоце Делчев, Type: monument, Latitude: 41.9643843, Longitude: 22.7742882, Region: Eastern Region
+Name: Споменик на паднати борци во НОБ, Type: monument, Latitude: 41.9653801, Longitude: 22.7716387, Region: Eastern Region
+Name: Кула, Type: monument, Latitude: 41.9425359, Longitude: 22.7954411, Region: Eastern Region
+Name: Josip Broz Tito, Type: memorial, Latitude: 41.9952169, Longitude: 21.426153, Region: Skopje Region
+Name: Маркови Кули, Type: ruins, Latitude: 41.9682709, Longitude: 21.4313461, Region: Skopje Region
+Name: Леонид Јанков, Type: monument, Latitude: 41.139367, Longitude: 22.5093733, Region: Eastern Region
+Name: Г177, Type: boundary_stone, Latitude: 40.8536596, Longitude: 21.1211491, Region: Southwestern Region
+Name: Г176, Type: boundary_stone, Latitude: 40.8545802, Longitude: 21.1255774, Region: Southwestern Region
+Name: Г175-2, Type: boundary_stone, Latitude: 40.8554344, Longitude: 21.1306578, Region: Southwestern Region
+Name: Г175-1, Type: boundary_stone, Latitude: 40.854785, Longitude: 21.1326005, Region: Southwestern Region
+Name: Св. Кирил и Методиј, Type: memorial, Latitude: 41.9977079, Longitude: 21.4339766, Region: Skopje Region
+Name: Св. Климент Охридски и Наум Охридски Чудотворец, Type: memorial, Latitude: 41.9975624, Longitude: 21.4341509, Region: Skopje Region
+Name: Цар Самоил, Type: memorial, Latitude: 41.9953917, Longitude: 21.4313414, Region: Skopje Region
+Name: Даме Груев, Type: memorial, Latitude: 41.9964949, Longitude: 21.4321474, Region: Skopje Region
+Name: Јустинијан I, Type: memorial, Latitude: 41.9968799, Longitude: 21.4323054, Region: Skopje Region
+Name: Олимпија, Type: memorial, Latitude: 41.9979046, Longitude: 21.4344182, Region: Skopje Region
+Name: Прометеј, Type: monument, Latitude: 41.993303, Longitude: 21.4337226, Region: Skopje Region
+Name: Тодор Александров, Type: monument, Latitude: 41.9834333, Longitude: 21.439106, Region: Skopje Region
+Name: Стара Рампа, Type: monument, Latitude: 41.986749, Longitude: 21.4369668, Region: Skopje Region
+Name: Бегова кула, Type: monument, Latitude: 41.9936684, Longitude: 21.4317487, Region: Skopje Region
+Name: Гоце Делчев, Type: monument, Latitude: 41.4166941, Longitude: 22.7549207, Region: Eastern Region
+Name: Борка Талески-Модерното / Лазо Филиповски-Лавски, Type: memorial, Latitude: 41.3661079, Longitude: 21.6749495, Region: Vardar Region
+Name: Свети Наум, Type: memorial, Latitude: 40.9142149, Longitude: 20.7412554, Region: Southwestern Region
+Name: Споменик на загинатите евреи, Type: monument, Latitude: 41.736405, Longitude: 22.1903758, Region: Polog Region
+Name: Мустафа-пашина џамија, Type: monument, Latitude: 42.000853, Longitude: 21.4375046, Region: Skopje Region
+Name: Vila Varvarka, Type: castle, Latitude: 41.9130467, Longitude: 21.4333848, Region: Skopje Region
+Name: Споменик на Јуриј Гагарин, Type: monument, Latitude: 41.9949279, Longitude: 21.4108745, Region: Skopje Region
+Name: Никола Карев, Type: monument, Latitude: 41.9930188, Longitude: 21.4332009, Region: Skopje Region
+Name: Вера Јоциќ, Type: monument, Latitude: 42.0016804, Longitude: 21.4283664, Region: Skopje Region
+Name: Марко Мрњавчевиќ, Type: monument, Latitude: 41.3455416, Longitude: 21.5532375, Region: Vardar Region
+Name: Круме Кепески, Type: monument, Latitude: 41.3450704, Longitude: 21.5505634, Region: Vardar Region
+Name: Блаже Конески, Type: monument, Latitude: 41.3451329, Longitude: 21.5506707, Region: Vardar Region
+Name: Марко Цепенков, Type: monument, Latitude: 41.3451792, Longitude: 21.5505581, Region: Vardar Region
+Name: Китино Кале, Type: castle, Latitude: 41.5130946, Longitude: 20.9663459, Region: Polog Region
+Name: Шуплив Камен, Type: boundary_stone, Latitude: 42.3110963, Longitude: 22.3602199, Region: Polog Region
+Name: 1a, Type: boundary_stone, Latitude: 41.3413087, Longitude: 22.9282524, Region: Eastern Region
+Name: Ботун, Type: memorial, Latitude: 41.2788101, Longitude: 20.7836677, Region: Vardar Region
+Name: Споменик на слободата, Type: monument, Latitude: 41.158263, Longitude: 22.5006786, Region: Eastern Region
+Name: Борецот, Type: monument, Latitude: 41.3738524, Longitude: 21.5025867, Region: Vardar Region
+Name: Сергеј Есенин, Type: monument, Latitude: 41.1736526, Longitude: 20.6783749, Region: Southwestern Region
+Name: Емин-бегова кула, Type: monument, Latitude: 42.0769461, Longitude: 22.1823517, Region: Skopje Region
+Name: Крстева кула, Type: monument, Latitude: 42.0768838, Longitude: 22.1826261, Region: Skopje Region
+Name: Споменик „Солунски фронт“ од I светска војна, Type: monument, Latitude: 41.1949939, Longitude: 22.6878453, Region: Eastern Region
+Name: Хаџикостова кула, Type: monument, Latitude: 42.0768628, Longitude: 22.1822635, Region: Skopje Region
+Name: Саат-кула, Type: monument, Latitude: 42.0792053, Longitude: 22.1818109, Region: Skopje Region
+Name: Златковичева кула, Type: monument, Latitude: 42.0788289, Longitude: 22.1809805, Region: Skopje Region
+Name: Симиќева кула, Type: monument, Latitude: 42.0786957, Longitude: 22.1794714, Region: Skopje Region
+Name: Струмица-Кристал-64, Type: monument, Latitude: 41.4409796, Longitude: 22.6796979, Region: Eastern Region
+Name: Григор Прличев, Type: tomb, Latitude: 41.1142035, Longitude: 20.7958058, Region: Southwestern Region
+Name: Тумба / Τούμπα, Type: boundary_stone, Latitude: 41.3384543, Longitude: 22.9275511, Region: Eastern Region
+Name: Св. Троица, Type: yes, Latitude: 41.006774, Longitude: 21.3415263, Region: Southwestern Region
+Name: Теракота, Type: memorial, Latitude: 41.8845661, Longitude: 22.5039935, Region: Eastern Region
+Name: Никола Кукунешоски - Дунѓерски, Type: memorial, Latitude: 41.1745272, Longitude: 20.6778868, Region: Southwestern Region
+Name: Крсте Јовановски, Type: memorial, Latitude: 41.1747311, Longitude: 20.6779485, Region: Southwestern Region
+Name: Димче Кошаркоски, Type: memorial, Latitude: 41.1749451, Longitude: 20.6779833, Region: Southwestern Region
+Name: Боро Шаин, Type: memorial, Latitude: 41.1756537, Longitude: 20.6782194, Region: Southwestern Region
+Name: Јово Стефановски - Риле, Type: memorial, Latitude: 41.1755185, Longitude: 20.6781791, Region: Southwestern Region
+Name: Разме Малески, Type: memorial, Latitude: 41.1753893, Longitude: 20.6781416, Region: Southwestern Region
+Name: Петре Гончески - Гиле, Type: memorial, Latitude: 41.1752843, Longitude: 20.6781067, Region: Southwestern Region
+Name: Св. Благовештение, Type: wayside_shrine, Latitude: 41.05924, Longitude: 20.8033957, Region: Southwestern Region
+Name: Гоце Делчев, Type: memorial, Latitude: 41.9963577, Longitude: 21.4323793, Region: Skopje Region
+Name: Konjuh, Type: archaeological_site, Latitude: 42.1003011, Longitude: 21.9665342, Region: Skopje Region
+Name: Rotonda Konjuh, Type: ruins, Latitude: 42.0949995, Longitude: 21.9658672, Region: Skopje Region
+Name: Bosko Chapel, Type: wayside_shrine, Latitude: 42.0995746, Longitude: 21.9606298, Region: Skopje Region
+Name: Bargala, Type: archaeological_site, Latitude: 41.7995125, Longitude: 22.289829, Region: Polog Region
+Name: Roman Bathhouse, Type: archaeological_site, Latitude: 41.3825161, Longitude: 22.7542141, Region: Eastern Region
+Name: Doma, Type: monument, Latitude: 42.0169571, Longitude: 21.4434502, Region: Skopje Region
+Name: Спомен плоча на Мајка Тереза, Type: memorial, Latitude: 41.9952759, Longitude: 21.4319995, Region: Skopje Region
+Name: Ард ден Долард, Type: memorial, Latitude: 41.1057278, Longitude: 20.8078335, Region: Southwestern Region
+Name: Резиденцијата Главинов, Type: castle, Latitude: 41.958616, Longitude: 21.4422187, Region: Skopje Region
+Name: Методија Андонов - Ченто, Type: memorial, Latitude: 41.9957136, Longitude: 21.4306041, Region: Skopje Region
+Name: terminal mitnitsa tetovo, Type: monument, Latitude: 41.9974433, Longitude: 20.9681527, Region: Polog Region
+Name: patarina-160, Type: monument, Latitude: 41.9885405, Longitude: 21.2926787, Region: Skopje Region
+Name: Kanda - Geoglif Sv. Nikole, Type: monument, Latitude: 41.8289715, Longitude: 21.9562049, Region: Skopje Region
+Name: Споменик на Малешевскиот (Малешки) народноослободителен одред, Type: memorial, Latitude: 41.7213441, Longitude: 22.6569551, Region: Eastern Region
+Name: Кале, Type: archaeological_site, Latitude: 41.0043725, Longitude: 20.9282003, Region: Southwestern Region
+Name: Калата, Type: archaeological_site, Latitude: 41.9856377, Longitude: 22.5905605, Region: Eastern Region
+Name: Бањичко Кале, Type: archaeological_site, Latitude: 41.6952366, Longitude: 21.628172, Region: Polog Region
+Name: Mirče Acev Bataljon, Type: monument, Latitude: 41.3747079, Longitude: 20.7630424, Region: Vardar Region
+Name: 2 musicians and one dancing man, Type: memorial, Latitude: 41.9943288, Longitude: 21.4307922, Region: Skopje Region
+Name: Коста Абраш, Type: memorial, Latitude: 41.1120953, Longitude: 20.795694, Region: Southwestern Region
+Name: Henry Dunant, Type: memorial, Latitude: 41.1124032, Longitude: 20.8071328, Region: Southwestern Region
+Name: Љубе Грујоски, Type: monument, Latitude: 41.2754595, Longitude: 21.3684104, Region: Vardar Region
+Name: Споменик на Дојрана, Type: monument, Latitude: 41.1857198, Longitude: 22.7227512, Region: Eastern Region
+Name: Чешма Света Петка, Type: monument, Latitude: 41.1825947, Longitude: 22.7233826, Region: Eastern Region
+Name: AXX110 / RA-42390, Type: memorial, Latitude: 41.1850048, Longitude: 20.7762352, Region: Southwestern Region
+Name: PMK301 / PH-KXL, Type: memorial, Latitude: 41.9779001, Longitude: 21.6157628, Region: Skopje Region
+Name: Дабнички масакр, Type: memorial, Latitude: 41.3724643, Longitude: 21.5605466, Region: Vardar Region
+Name: Толе Паша, Type: monument, Latitude: 41.2064953, Longitude: 21.6536957, Region: Vardar Region
+Name: Ацо Ангеловски, Type: memorial, Latitude: 42.022416, Longitude: 21.5476216, Region: Skopje Region
+Name: Кирил Петрушевски, Type: memorial, Latitude: 42.0225556, Longitude: 21.5480468, Region: Skopje Region
+Name: Ерол Готак, Type: memorial, Latitude: 42.0227044, Longitude: 21.5486015, Region: Skopje Region
+Name: Нане Наумоски, Type: memorial, Latitude: 41.9764851, Longitude: 21.1660504, Region: Skopje Region
+Name: Сашо Китаноски, Type: memorial, Latitude: 41.977847, Longitude: 21.1773385, Region: Skopje Region
+Name: Бранко Секулоски, Type: memorial, Latitude: 41.97753, Longitude: 21.1679024, Region: Skopje Region
+Name: Горан Миноски, Type: memorial, Latitude: 41.9781971, Longitude: 21.1745241, Region: Skopje Region
+Name: Марко Деспотоски, Type: memorial, Latitude: 41.977893, Longitude: 21.1713626, Region: Skopje Region
+Name: Ердован Шабаноски, Type: memorial, Latitude: 41.9767167, Longitude: 21.1675604, Region: Skopje Region
+Name: Љубе Грујоски, Type: memorial, Latitude: 41.9772958, Longitude: 21.1694976, Region: Skopje Region
+Name: Дарко Велјаноски, Type: memorial, Latitude: 41.9770406, Longitude: 21.1717935, Region: Skopje Region
+Name: Веби Рушитоски, Type: memorial, Latitude: 41.9767893, Longitude: 21.1747438, Region: Skopje Region
+Name: Пеце Секулоски, Type: memorial, Latitude: 41.977042, Longitude: 21.1770879, Region: Skopje Region
+Name: Карпалак, Type: memorial, Latitude: 41.3575814, Longitude: 21.6256855, Region: Vardar Region
+Name: Масакр во Ваташа, Type: memorial, Latitude: 41.4014262, Longitude: 22.0284286, Region: Vardar Region
+Name: Пере Тошев, Type: tomb, Latitude: 41.3428704, Longitude: 21.5583071, Region: Vardar Region
+Name: Duko Tasev, Type: memorial, Latitude: 41.4436592, Longitude: 20.8721449, Region: Vardar Region
+Name: Гоце Делчев, Type: monument, Latitude: 41.4831122, Longitude: 20.9229426, Region: Vardar Region
+Name: Христо Узунов, Type: monument, Latitude: 41.483575, Longitude: 20.9222623, Region: Vardar Region
+Name: Горна Порта, Type: city_gate, Latitude: 41.1150206, Longitude: 20.7949057, Region: Southwestern Region
+Name: Битката на Ѓурѓејца, Type: battlefield, Latitude: 41.4528994, Longitude: 20.9658462, Region: Vardar Region
+Name: Споменик Св. Никола, Type: monument, Latitude: 41.8646892, Longitude: 21.942062, Region: Skopje Region
+Name: Споменик „Лазар Колишевски“, Type: monument, Latitude: 41.8644645, Longitude: 21.9410121, Region: Skopje Region
+Name: Св. Илија, Type: memorial, Latitude: 41.8627557, Longitude: 21.9386585, Region: Skopje Region
+Name: Споменик на Никола Карев, Type: monument, Latitude: 41.9156602, Longitude: 22.412778, Region: Skopje Region
+Name: Кире Гаврилоски-Јане / Круме Волнароски-Коља, Type: memorial, Latitude: 41.3464944, Longitude: 21.5629735, Region: Vardar Region
+Name: Александар Македонски, Type: memorial, Latitude: 41.3421058, Longitude: 21.5572532, Region: Vardar Region
+Name: Мирослав Јоксимовиќ, Type: memorial, Latitude: 41.3761727, Longitude: 21.2464617, Region: Vardar Region
+Name: Кица Петрески, Type: monument, Latitude: 41.3653786, Longitude: 21.2488407, Region: Vardar Region
+Name: VAM-304, Type: monument, Latitude: 41.8668125, Longitude: 21.6650899, Region: Skopje Region
+Name: МАР-7712, Type: monument, Latitude: 41.4498577, Longitude: 22.6491133, Region: Eastern Region
+Name: 1. Бригада, Type: memorial, Latitude: 41.366045, Longitude: 20.6489384, Region: Vardar Region
+Name: Ослободителите на Скопје, Type: monument, Latitude: 41.9998632, Longitude: 21.4292436, Region: Skopje Region
+Name: 08.12.1941, Type: memorial, Latitude: 41.3435127, Longitude: 21.5549177, Region: Vardar Region
+Name: Вејце, Type: monument, Latitude: 42.0673767, Longitude: 20.9185104, Region: Polog Region
+Name: Генерал Михаило Апостолски, Type: monument, Latitude: 41.9998618, Longitude: 21.4485415, Region: Skopje Region
+Name: Генерал Михајло Апостолски, Type: memorial, Latitude: 41.9988251, Longitude: 21.4506665, Region: Skopje Region
+Name: Krste Petkov Misirkov, Type: monument, Latitude: 41.9960184, Longitude: 21.4412009, Region: Skopje Region
+Name: Blaže Koneski, Type: monument, Latitude: 41.9960802, Longitude: 21.4408764, Region: Skopje Region
+Name: Sultana, Type: memorial, Latitude: 41.6560282, Longitude: 21.0216359, Region: Polog Region
+Name: Xhemë Hasa, Type: memorial, Latitude: 41.7192252, Longitude: 20.881732, Region: Polog Region
+Name: Albanian Mother, Type: memorial, Latitude: 41.5964956, Longitude: 20.9510739, Region: Polog Region
+Name: Св. Георгиј, Type: wayside_shrine, Latitude: 41.0108476, Longitude: 21.3208996, Region: Southwestern Region
+Name: Фаќач на чесниот крст, Type: monument, Latitude: 41.1119818, Longitude: 20.799333, Region: Southwestern Region
+Name: Павел Шатев, Type: monument, Latitude: 41.9945304, Longitude: 21.4326511, Region: Skopje Region
+Name: Невена Георгиева-Дуња, Type: memorial, Latitude: 41.993726, Longitude: 21.4332709, Region: Skopje Region
+Name: Ѓоко Лазаревски, Type: monument, Latitude: 42.0640097, Longitude: 21.0288552, Region: Skopje Region
+Name: Теодорит, Type: tomb, Latitude: 42.0700178, Longitude: 21.027212, Region: Skopje Region
+Name: Кирил Пејчиновиќ-Тетоец, Type: tomb, Latitude: 42.0669654, Longitude: 21.0282911, Region: Skopje Region
+Name: Загинати Лешочани во војните 1903-2001, Type: monument, Latitude: 42.0668701, Longitude: 21.0285176, Region: Skopje Region
+Name: Нада Филева, Type: memorial, Latitude: 41.1141534, Longitude: 20.798276, Region: Southwestern Region
+Name: Dane kraptzew, Type: memorial, Latitude: 42.0043082, Longitude: 21.4185013, Region: Skopje Region
+Name: Атентат на Киро Глигоров, Type: memorial, Latitude: 41.9918182, Longitude: 21.4296159, Region: Skopje Region
+Name: Св. Петка, Type: wayside_shrine, Latitude: 41.3643261, Longitude: 21.6070578, Region: Vardar Region
+Name: Ф-86Е, Type: aircraft, Latitude: 41.018858, Longitude: 21.3293819, Region: Southwestern Region
+Name: Ф-86Д, Type: aircraft, Latitude: 41.0186718, Longitude: 21.3292773, Region: Southwestern Region
+Name: Браќата Просветители Св. Кирил и Методиј, Type: monument, Latitude: 41.9135927, Longitude: 22.4105061, Region: Skopje Region
+Name: Љупчо Сантов, Type: monument, Latitude: 41.9143473, Longitude: 22.410612, Region: Skopje Region
+Name: Братска гробница, Type: tomb, Latitude: 41.204511, Longitude: 21.4572557, Region: Vardar Region
+Name: Сухои Су-25УБ, Type: aircraft, Latitude: 41.9755167, Longitude: 21.6216919, Region: Skopje Region
+Name: Сухои Су-25К, Type: aircraft, Latitude: 41.9754577, Longitude: 21.6219516, Region: Skopje Region
+Name: Сухои Су-25К, Type: aircraft, Latitude: 41.9753556, Longitude: 21.6221983, Region: Skopje Region
+Name: Сухои Су-25К, Type: aircraft, Latitude: 41.975287, Longitude: 21.6224322, Region: Skopje Region
+Name: Игуменија Катерина, Type: tomb, Latitude: 41.4286415, Longitude: 21.6200758, Region: Vardar Region
+Name: Naim Frasheri, Type: monument, Latitude: 41.8781835, Longitude: 20.8876605, Region: Polog Region
+Name: Naser Ademi, Type: monument, Latitude: 41.878351, Longitude: 20.8835051, Region: Polog Region
+Name: Deshmoret e Ushtrise Clirimtare Kombetare, Type: monument, Latitude: 41.8782156, Longitude: 20.883467, Region: Polog Region
+Name: Јаким Д Стојковски, Type: memorial, Latitude: 42.0001506, Longitude: 22.1778987, Region: Skopje Region
+Name: Viničko Kale, Type: castle, Latitude: 41.8768098, Longitude: 22.5027575, Region: Eastern Region
+Name: Нико Нестор-Дживджан, Type: memorial, Latitude: 41.1757975, Longitude: 20.6778798, Region: Southwestern Region
+Name: Дрини дент, Type: memorial, Latitude: 41.1756353, Longitude: 20.6791018, Region: Southwestern Region
+Name: 99.4-025, Type: locomotive, Latitude: 42.0080767, Longitude: 21.3631045, Region: Skopje Region
+Name: 83-064, Type: locomotive, Latitude: 41.9780627, Longitude: 21.4618597, Region: Skopje Region
+Name: Споменик „Солунски атентатори и Гемиџии“, Type: memorial, Latitude: 41.9964125, Longitude: 21.4328484, Region: Skopje Region
+Name: Света Троица и Свети Ѓорѓија, Type: ruins, Latitude: 41.9538189, Longitude: 21.288822, Region: Skopje Region
+Name: Голема Пеш, Type: archaeological_site, Latitude: 41.8117124, Longitude: 21.1617392, Region: Skopje Region
+Name: Природонаучен Музеј, Type: museum, Latitude: 42.005709, Longitude: 21.4174425, Region: Skopje Region
+Name: Манастир Св. Ѓорѓија, Type: place_of_worship, Latitude: 42.0690911, Longitude: 21.3001786, Region: Skopje Region
+Name: Музеј на град Берово, Type: museum, Latitude: 41.7077548, Longitude: 22.8566138, Region: Eastern Region
+Name: Манастир Св. Архангел Михаил, Type: place_of_worship, Latitude: 41.701039, Longitude: 22.859018, Region: Eastern Region
+Name: Музеј Галерија Кавадарци, Type: museum, Latitude: 41.4343634, Longitude: 22.0163228, Region: Vardar Region
+Name: Куќа на Робевци, Type: museum, Latitude: 41.112361, Longitude: 20.7961416, Region: Southwestern Region
+Name: Споменик на Александар Македонски, Type: statue, Latitude: 41.9959035, Longitude: 21.4314474, Region: Skopje Region
+Name: Св.Тројца, Type: place_of_worship, Latitude: 41.6350875, Longitude: 22.4677492, Region: Polog Region
+Name: Museum Teracotta, Type: museum, Latitude: 41.8841902, Longitude: 22.5049622, Region: Eastern Region
+Name: Црква Света Петка, Type: place_of_worship, Latitude: 40.9131005, Longitude: 20.7415162, Region: Southwestern Region
+Name: Манастир Св. Андреј, Type: place_of_worship, Latitude: 41.9505936, Longitude: 21.2991931, Region: Skopje Region
+Name: Св. Никола, Type: place_of_worship, Latitude: 41.951833, Longitude: 21.3042042, Region: Skopje Region
+Name: Музеј на Дојран, Type: museum, Latitude: 41.1871817, Longitude: 22.7221034, Region: Eastern Region
+Name: Филип II Македонски, Type: statue, Latitude: 41.9984602, Longitude: 21.4349949, Region: Skopje Region
+Name: Св. Климент Охридски, Type: statue, Latitude: 41.9983057, Longitude: 21.4254968, Region: Skopje Region
+Name: Скендербег, Type: statue, Latitude: 41.9993163, Longitude: 21.437162, Region: Skopje Region
+Name: Museum of Wine, Type: museum, Latitude: 41.4085959, Longitude: 22.2447656, Region: Vardar Region
+Name: Manastir Sveta Bogorodica, Type: place_of_worship, Latitude: 41.8289199, Longitude: 21.6864385, Region: Skopje Region
+Name: Св. Стефан, Type: place_of_worship, Latitude: 41.0738678, Longitude: 20.8043628, Region: Southwestern Region
+Name: Д-р Никола Незлобински, Type: museum, Latitude: 41.1805738, Longitude: 20.6776078, Region: Southwestern Region
+Name: Manastir Sveti Jovan, Type: place_of_worship, Latitude: 41.8286581, Longitude: 21.6894737, Region: Skopje Region
+Name: Спомен куќа на Страшо Пинџур, Type: museum, Latitude: 41.4184594, Longitude: 22.0181317, Region: Vardar Region
+Name: City Museum, Type: museum, Latitude: 42.2020133, Longitude: 22.3348959, Region: Polog Region
+Name: Манастир Св. Богородица Елеуса, Type: place_of_worship, Latitude: 41.4748537, Longitude: 22.5651714, Region: Eastern Region
+Name: Манастир Св. Леонтиј, Type: place_of_worship, Latitude: 41.4505759, Longitude: 22.5902413, Region: Eastern Region
+Name: Музеј на град Делчево, Type: museum, Latitude: 41.9664768, Longitude: 22.7729986, Region: Eastern Region
+Name: Josip Broz Tito, Type: statue, Latitude: 41.9952169, Longitude: 21.426153, Region: Skopje Region
+Name: Св. Јован Крстител, Type: place_of_worship, Latitude: 42.0758863, Longitude: 22.1831257, Region: Skopje Region
+Name: Св. Кирил и Методиј, Type: statue, Latitude: 41.9977079, Longitude: 21.4339766, Region: Skopje Region
+Name: Св. Климент Охридски и Наум Охридски Чудотворец, Type: statue, Latitude: 41.9975624, Longitude: 21.4341509, Region: Skopje Region
+Name: Цар Самоил, Type: statue, Latitude: 41.9953917, Longitude: 21.4313414, Region: Skopje Region
+Name: Даме Груев, Type: statue, Latitude: 41.9964949, Longitude: 21.4321474, Region: Skopje Region
+Name: Јустинијан I, Type: statue, Latitude: 41.9968799, Longitude: 21.4323054, Region: Skopje Region
+Name: Олимпија, Type: statue, Latitude: 41.9979046, Longitude: 21.4344182, Region: Skopje Region
+Name: Св. Троица, Type: place_of_worship, Latitude: 41.006774, Longitude: 21.3415263, Region: Southwestern Region
+Name: Свети Тројца Архиереи, Type: place_of_worship, Latitude: 41.0881175, Longitude: 20.8227937, Region: Southwestern Region
+Name: Eтнолошки музеј, Type: museum, Latitude: 41.0240503, Longitude: 21.0506131, Region: Southwestern Region
+Name: Гоце Делчев, Type: statue, Latitude: 41.9963577, Longitude: 21.4323793, Region: Skopje Region
+Name: Museum of Galichnik's cultural heritage, Type: museum, Latitude: 41.5939237, Longitude: 20.652723, Region: Polog Region
+Name: Споменик на Христо Узунов, Type: statue, Latitude: 41.9950349, Longitude: 21.4293515, Region: Skopje Region
+Name: Galerija RA, Type: museum, Latitude: 41.9989569, Longitude: 21.3865879, Region: Skopje Region
+Name: Museum Strumica, Type: museum, Latitude: 41.4354106, Longitude: 22.6364291, Region: Eastern Region
+Name: Saint Joachim Osogovski, Type: place_of_worship, Latitude: 42.2089207, Longitude: 22.3621503, Region: Polog Region
+Name: Vardarski Rid, Type: museum, Latitude: 41.1488082, Longitude: 22.5220207, Region: Eastern Region
+Name: House of Lambeski, Type: museum, Latitude: 41.1123275, Longitude: 20.7970433, Region: Southwestern Region
