@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Домашно 2",
+    "\\Домашно 2\\prototype",
+    "\\Домашно 2\\prototype\\CulturallyHistoricalObjectsWebApp",
+    "\\Домашно 2\\prototype\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp",
+    "\\Домашно 2\\prototype\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers"
   ],
-  "SelectedNode": "\\C:\\Users\\vanes\\Source\\Repos\\dians-proekt3",
+  "SelectedNode": "\\Домашно 2\\prototype\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\AccountController.cs",
   "PreviewInSolutionExplorer": false
 }
