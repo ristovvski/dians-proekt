@@ -81,7 +81,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
                 throw new HttpException(404, "Not Found");
             }
             UserManager.AddToRole(user.Id, model.SelectedRole);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "HistoricalCulturalObjects");
         }
 
         //
@@ -472,7 +472,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "HistoricalCulturalobjects");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
