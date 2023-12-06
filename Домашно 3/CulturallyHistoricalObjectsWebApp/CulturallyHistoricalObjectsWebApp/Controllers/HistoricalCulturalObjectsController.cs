@@ -44,7 +44,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         public ActionResult FindClosest(FilterDTO model)
         {
             List<HistoricalCulturalObjects> objects = filterService.filterObjects(model);
-
+            
             return View(distanceService.distance(model, objects));
         }
 
