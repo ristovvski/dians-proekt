@@ -1,4 +1,6 @@
-﻿@model IEnumerable<CulturallyHistoricalObjectsWebApp.Models.HistoricalCulturalObjects>
+﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCOUserDTO
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
 
 <head>
     <title>Find all</title>
@@ -17,93 +19,126 @@
             width: 100%;
         }
 
-        body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            0deg,
-            rgba(0, 0, 36, 0.6) 0%,
-            rgba(0, 0, 0, 0.8) 100%
-        );
-        z-index: -1;
-        }
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient( 0deg, rgba(0, 0, 36, 0.6) 0%, rgba(0, 0, 0, 0.8) 100% );
+                z-index: -1;
+            }
 
         table {
-        margin-top: 40px;
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        overflow-x: auto;
+            margin-top: 40px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            overflow-x: auto;
         }
 
         th,
         td {
-        padding: 15px;
-        text-align: center;
+            padding: 15px;
+            text-align: center;
         }
 
         th {
-        background-color: #f1c40f;
-        color: #2c3e50;
+            background-color: #f1c40f;
+            color: #2c3e50;
         }
 
         td {
-        background-color: #34495e;
-        color: #ecf0f1;
+            background-color: #34495e;
+            color: #ecf0f1;
         }
 
         tr:nth-child(even) td {
-        background-color: #2c3e50;
+            background-color: #2c3e50;
         }
 
         .buttons-row {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
         }
 
         .yellow-button {
-        background-color: #f1c40f;
-        color: #2c3e50;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 14px;
-        width: 100%;
-        margin-right: 10px;
+            background-color: #f1c40f;
+            color: #2c3e50;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            margin-right: 10px;
         }
 
         .red-button {
-        background-color: #e74c3c;
-        color: #ecf0f1;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 14px;
-        width: 100%;
+            background-color: #e74c3c;
+            color: #ecf0f1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
         }
 
         @@media only screen and (max-width: 600px) {
             table {
                 width: 90%;
             }
+
             thead {
                 display: none;
             }
+
             td {
                 display: block;
                 width: 100%;
             }
         }
-
     </style>
- </head>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".favorite-button").click(function (e) {
+                e.preventDefault();
+                var $form = $(this).closest('form');
+
+                $.ajax({
+                    url: $form.attr('action'),
+                    type: 'POST',
+                    data: $form.serialize(),
+                    success: function () {
+                        var $button = $form.find('.favorite-button');
+                        if ($button.text() === "Favorite") {
+                            $button.text("Remove");
+                            $button.removeClass("yellow-button").addClass("red-button");
+                            $form.attr('action', '/Account/RemoveFromFavorites')
+                            alert("Place added to favorites!")
+                        } else {
+                            $button.text("Favorite");
+                            $button.removeClass("red-button").addClass("yellow-button");
+                            $form.attr('action', '/Account/AddToFavorite')
+                            alert("Place removed from favorites!")
+                        }
+                    
+                    },
+                    error: function (jqXHR) {
+                        // Show alert message with the error message from the JSON response
+                        var errorMessage = JSON.parse(jqXHR.responseText).message;
+                        console.log(errorMessage);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
 <body>
     <table>
         <thead>
@@ -116,7 +151,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var obj in Model)
+            @foreach (var obj in Model.HistoricalCulturalObjects)
             {
                 <tr>
                     <td>@obj.name</td>
@@ -125,9 +160,24 @@
                     <td>@(obj.type != null ? obj.type.type : "")</td>
                     <td class="button-column">
                         <div class="buttons-row">
-                            @using (Html.BeginForm("Details", "HistoricalCulturalObjects", new { id = obj.id }, FormMethod.Get, new { @class = "form-inline" }))
+                            @{
+                                bool isInFavorite = Model.favoritePlacesIds.Contains(obj.id);
+                            }
+                            @if (!isInFavorite)
                             {
-                                <button type="submit" class="yellow-button">Favorite</button>
+                                using (Html.BeginForm("AddToFavorite", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                                {
+                                    @Html.Hidden("id", obj.id) <!-- Use "id" as the parameter name -->
+                                    <button place-id="@obj.id" type="submit" class="yellow-button favorite-button">Favorite</button>
+                                }
+                            }
+                            else
+                            {
+                                using (Html.BeginForm("RemoveFromFavorites", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                                {
+                                    @Html.Hidden("id", obj.id) <!-- Use "id" as the parameter name -->
+                                    <button type="submit" class="red-button favorite-button">Remove</button>
+                                }
                             }
 
                             @if (User.IsInRole("Administrator"))

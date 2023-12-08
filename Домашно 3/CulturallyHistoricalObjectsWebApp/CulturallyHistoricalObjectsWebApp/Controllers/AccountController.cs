@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using CulturallyHistoricalObjectsWebApp.Models;
 using System.Collections.Generic;
 
+
 namespace CulturallyHistoricalObjectsWebApp.Controllers
 {
     [Authorize]
@@ -18,6 +19,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         public AccountController()
         {
@@ -68,6 +70,91 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             AddUserToRoleModel model = new AddUserToRoleModel();
             model.Roles = new List<string>() { "Administrator", "User" };
             return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult AddToFavorite(int id)
+        {
+            var currentUser = User.Identity.GetUserId();
+
+            if (currentUser != null)
+            {
+                ApplicationUser user = db.Users.Find(currentUser);
+
+                if (user != null)
+                {
+                    HistoricalCulturalObjects placeToAdd = db.culturalObjects.Find(id);
+
+                    if (placeToAdd != null)
+                    {
+                        if (!user.FavoritePlaces.Contains(placeToAdd))
+                        {
+                            user.FavoritePlaces.Add(placeToAdd);
+                            db.SaveChanges();
+
+                            return Json(new { success = true, message = "Place added to favorites!" });
+                        }
+                        else
+                        {
+                            return Json(new { success = false, message = "Place is already in favorites!" });
+                        }
+                    }
+                    else
+                    {
+                        return Json(new { success = false, message = "Place not found!" });
+                    }
+                }
+                else
+                {
+                    return Json(new { success = false, message = "User not found!" });
+                }
+            }
+            else
+            {
+                return Json(new { success = false, message = "No user logged in!" });
+            }
+        }
+
+        [HttpPost]
+        public ActionResult RemoveFromFavorites(int id)
+        {
+            var currentUser = User.Identity.GetUserId();
+
+            if (currentUser != null)
+            {
+                ApplicationUser user = db.Users.Find(currentUser);
+                if (user != null)
+                {
+                    HistoricalCulturalObjects placeToRemove = db.culturalObjects.Find(id);
+
+                    if (placeToRemove != null)
+                    {
+                        if (user.FavoritePlaces.Contains(placeToRemove))
+                        {
+                            user.FavoritePlaces.Remove(placeToRemove);
+                            db.SaveChanges();
+
+                            return Json(new { success = true, message = "Place is removed!" });
+                        }
+                        else
+                        {
+                            return Json(new { success = false, message = "Place is not in favorites!" });
+                        }
+                    }
+                    else
+                    {
+                        return Json(new { success = false, message = "Place not found!" });
+                    }
+                }
+                else
+                {
+                    return Json(new { success = false, message = "User not found!" });
+                }
+            }
+            else
+            {
+                return Json(new { success = false, message = "No user logged in!" });
+            }
         }
 
 

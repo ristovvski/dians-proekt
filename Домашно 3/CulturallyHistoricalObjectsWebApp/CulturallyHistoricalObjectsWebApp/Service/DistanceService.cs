@@ -2,12 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Caching;
 using System.Web;
 
 namespace CulturallyHistoricalObjectsWebApp.Service
 {
     public class DistanceService
     {
+
 
         static double toRadians(double angleIn10thofaDegree)
         {
@@ -17,6 +19,8 @@ namespace CulturallyHistoricalObjectsWebApp.Service
         public Dictionary<string, ClosestDTO> distance(FilterDTO model, List<HistoricalCulturalObjects> objects)
         {
 
+            
+            
             Dictionary<string, ClosestDTO> objectsByType = new Dictionary<string, ClosestDTO>();
 
             objects = objects.OrderBy(o => o.id).ToList();

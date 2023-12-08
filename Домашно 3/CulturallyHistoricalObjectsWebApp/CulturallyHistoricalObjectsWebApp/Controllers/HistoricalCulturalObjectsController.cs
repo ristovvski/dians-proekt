@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
 using CulturallyHistoricalObjectsWebApp.Service;
+using Microsoft.AspNet.Identity;
 
 namespace CulturallyHistoricalObjectsWebApp.Controllers
 {
@@ -38,14 +39,37 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
 
         public ActionResult FindAll(FilterDTO model)
         {
-            return View(filterService.filterObjects(model));
+            // Fetch the favorite IDs for the current user outside the loop
+            var userId = User.Identity.GetUserId();
+            var currentUser = db.Users.Find(userId);
+
+            List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
+            List<HistoricalCulturalObjects> hist = filterService.filterObjects(model);
+
+            HistoricalCOUserDTO historicalCOUserDTO = new HistoricalCOUserDTO();
+
+            historicalCOUserDTO.HistoricalCulturalObjects = hist;
+            historicalCOUserDTO.favoritePlacesIds = currentUserFavoriteIds;
+
+            return View(historicalCOUserDTO);
         }
 
         public ActionResult FindClosest(FilterDTO model)
         {
             List<HistoricalCulturalObjects> objects = filterService.filterObjects(model);
 
-            return View(distanceService.distance(model, objects));
+            ClosestFavoriteDTO closestFavoriteDTO = new ClosestFavoriteDTO();
+
+            closestFavoriteDTO.closestDistance = distanceService.distance(model, objects);
+
+            var userId = User.Identity.GetUserId();
+            var currentUser = db.Users.Find(userId);
+
+            List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
+
+            closestFavoriteDTO.favoritePlacesIds = currentUserFavoriteIds;
+
+            return View(closestFavoriteDTO);
         }
 
         // GET: HistoricalCulturalObjects/Details/5

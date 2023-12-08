@@ -75,6 +75,7 @@
     <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
@@ -225,11 +226,38 @@
     <Compile Include="Migrations\202311301228054_typesTableMigration.designer.cs">
       <DependentUpon>202311301228054_typesTableMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312061525363_FavoritePlacesToUser.cs" />
+    <Compile Include="Migrations\202312061525363_FavoritePlacesToUser.designer.cs">
+      <DependentUpon>202312061525363_FavoritePlacesToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312061619525_WishListUpdate.cs" />
+    <Compile Include="Migrations\202312061619525_WishListUpdate.designer.cs">
+      <DependentUpon>202312061619525_WishListUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312061623126_WishListMigration2.cs" />
+    <Compile Include="Migrations\202312061623126_WishListMigration2.designer.cs">
+      <DependentUpon>202312061623126_WishListMigration2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312061625556_WishListMigration3.cs" />
+    <Compile Include="Migrations\202312061625556_WishListMigration3.designer.cs">
+      <DependentUpon>202312061625556_WishListMigration3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312061638060_WishListMigration4.cs" />
+    <Compile Include="Migrations\202312061638060_WishListMigration4.designer.cs">
+      <DependentUpon>202312061638060_WishListMigration4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312061647366_NewManyToManyTable.cs" />
+    <Compile Include="Migrations\202312061647366_NewManyToManyTable.designer.cs">
+      <DependentUpon>202312061647366_NewManyToManyTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClosestDTO.cs" />
+    <Compile Include="Models\ClosestFavoriteDTO.cs" />
+    <Compile Include="Models\FavoritePlaces.cs" />
     <Compile Include="Models\FilterDTO.cs" />
     <Compile Include="Models\HCObjectsDTO.cs" />
+    <Compile Include="Models\HistoricalCOUserDTO.cs" />
     <Compile Include="Models\HistoricalCulturalObjects.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -361,6 +389,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311301228054_typesTableMigration.resx">
       <DependentUpon>202311301228054_typesTableMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312061525363_FavoritePlacesToUser.resx">
+      <DependentUpon>202312061525363_FavoritePlacesToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312061619525_WishListUpdate.resx">
+      <DependentUpon>202312061619525_WishListUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312061623126_WishListMigration2.resx">
+      <DependentUpon>202312061623126_WishListMigration2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312061625556_WishListMigration3.resx">
+      <DependentUpon>202312061625556_WishListMigration3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312061638060_WishListMigration4.resx">
+      <DependentUpon>202312061638060_WishListMigration4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312061647366_NewManyToManyTable.resx">
+      <DependentUpon>202312061647366_NewManyToManyTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

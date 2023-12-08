@@ -15,6 +15,10 @@ namespace CulturallyHistoricalObjectsWebApp.Models
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+
+        // Navigation property for favorite places
+        public virtual List<HistoricalCulturalObjects> FavoritePlaces { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -34,6 +38,21 @@ namespace CulturallyHistoricalObjectsWebApp.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ApplicationUser>()
+                .HasMany(u => u.FavoritePlaces)
+                .WithMany(h => h.FavoriteForUsers)
+                .Map(m =>
+                {
+                    m.ToTable("UserFavoritePlaces");
+                    m.MapLeftKey("UserId");
+                    m.MapRightKey("HistoricalCulturalObjectsId");
+                });
         }
 
         public static ApplicationDbContext Create()

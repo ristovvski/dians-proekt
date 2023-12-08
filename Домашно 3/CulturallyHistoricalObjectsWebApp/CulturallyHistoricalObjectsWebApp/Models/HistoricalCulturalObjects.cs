@@ -18,5 +18,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
         public double lon { get; set; }
 
         public double lat {  get; set; }
+        // Navigation property for the ApplicationUser
+        public virtual List<ApplicationUser> FavoriteForUsers { get; set; }
     }
 }
