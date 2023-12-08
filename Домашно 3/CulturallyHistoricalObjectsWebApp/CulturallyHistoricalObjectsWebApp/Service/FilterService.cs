@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using CulturallyHistoricalObjectsWebApp.Service.Filters;
 
 namespace CulturallyHistoricalObjectsWebApp.Service
 {
@@ -16,16 +17,13 @@ namespace CulturallyHistoricalObjectsWebApp.Service
             List<HistoricalCulturalObjects> objects = db.culturalObjects.Include("type").ToList();
             ObjectTypesModel tmp = db.objectTypes.Find(filterDTO.type_id);
             filterDTO.ObjectTypesModel = tmp;
-            if (filterDTO.name != null)
-            {
-                objects = objects.Where(o => o.name.ToLower().Contains(filterDTO.name.ToLower())).ToList();
-            }
-            if (filterDTO.ObjectTypesModel != null)
-            {
-                objects = objects.Where(o => o.type != null && o.type.Equals(filterDTO.ObjectTypesModel)).ToList();
-            }
-
-            return objects;
+            Pipe<FilterDTO, List<HistoricalCulturalObjects>> pipe =
+                new Pipe<FilterDTO, List<HistoricalCulturalObjects>>();
+            FilterByName filterByName = new FilterByName();
+            FilterByType filterByType = new FilterByType();
+            pipe.addFilter(filterByName);
+            pipe.addFilter(filterByType);
+            return pipe.runFilters(filterDTO, objects);
         }
     }
 }
