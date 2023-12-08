@@ -23,6 +23,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         {
             FilterDTO filterDTO= new FilterDTO();
             filterDTO.types = db.objectTypes.ToList();
+            filterDTO.regions = db.regions.ToList();
             return View(filterDTO);
         }
 

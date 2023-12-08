@@ -50,16 +50,20 @@
     </header>
     <div>
         <div>
-            @using (Html.BeginForm("Filter", "HistoricalCulturalObjects", FormMethod.Post, new { @class = "form-style"}))
+            @using (Html.BeginForm("Filter", "HistoricalCulturalObjects", FormMethod.Post, new { @class = "form-style" }))
             {
 
-                @Html.LabelFor(model => model.name, "Name:", new { @class = "label-style"})
-                @Html.TextBoxFor(model => model.name, new { @class="input-text-style"})
-                @Html.Label("Select category", new { @class = "label-style"})
-                @Html.DropDownListFor(model => model.type_id, new SelectList(Model.types, "id", "type"), "Select category", new { @class = "select-style"})
+                @Html.LabelFor(model => model.name, "Name:", new { @class = "label-style" })
+                @Html.TextBoxFor(model => model.name, new { @class = "input-text-style" })
+                @Html.Label("Select category", new { @class = "label-style" })
+                @Html.DropDownListFor(model => model.type_id, new SelectList(Model.types, "id", "type"), "Select category", new { @class = "select-style" })
 
-                @Html.HiddenFor(model => model.userLatitude, new { @id = "userLatitude"})
-                @Html.HiddenFor(model => model.userLongitude, new { @id = "userLongitude"})
+                @Html.Label("Select region", new { @class = "label-style" })
+                @Html.DropDownListFor(model => model.region_id, new SelectList(Model.regions, "id", "name"), "Select category", new { @class = "select-style" })
+
+
+                @Html.HiddenFor(model => model.userLatitude, new { @id = "userLatitude" })
+                @Html.HiddenFor(model => model.userLongitude, new { @id = "userLongitude" })
 
                 @Html.Hidden("actionType", "", new { id = "actionType" })
 

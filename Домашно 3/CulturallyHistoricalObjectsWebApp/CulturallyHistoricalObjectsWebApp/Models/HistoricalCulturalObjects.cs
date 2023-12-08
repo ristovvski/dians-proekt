@@ -15,6 +15,10 @@ namespace CulturallyHistoricalObjectsWebApp.Models
 
         public ObjectTypesModel type {  get; set; }
 
+        public Region region { get; set; }
+
+        public string address {  get; set; }
+
         public double lon { get; set; }
 
         public double lat {  get; set; }

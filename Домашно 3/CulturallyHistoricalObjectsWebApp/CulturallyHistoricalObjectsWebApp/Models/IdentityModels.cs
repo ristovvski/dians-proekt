@@ -33,6 +33,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
 
         public DbSet<HistoricalCulturalObjects> culturalObjects { get; set; }
         public DbSet<ObjectTypesModel> objectTypes { get; set; }
+        public DbSet<Region> regions {  get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

@@ -44,6 +44,13 @@ namespace CulturallyHistoricalObjectsWebApp.Data
 
             return typesList;
         }
+
+        public List<string> getStringRegion(List<HCObjectsDTO> objects)
+        {
+            List<string> regionList = objects.Select(o => o.state).ToList();
+
+            return regionList;
+        }
     }
 
 }

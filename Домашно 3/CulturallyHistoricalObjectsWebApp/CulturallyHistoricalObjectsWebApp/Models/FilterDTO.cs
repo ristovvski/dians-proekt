@@ -9,9 +9,14 @@ namespace CulturallyHistoricalObjectsWebApp.Models
     {
         public string name { get; set; }
         public List<ObjectTypesModel> types {  get; set; }
+        public List<Region> regions {  get; set; }
         public int? type_id {  get; set; }
 
+        public int? region_id {  get; set; }
+
         public ObjectTypesModel ObjectTypesModel { get; set; }
+
+        public Region filter_region { get; set; }
 
         public double userLatitude { get; set; }
 

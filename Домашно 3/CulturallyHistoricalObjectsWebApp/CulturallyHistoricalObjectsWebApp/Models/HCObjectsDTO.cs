@@ -11,5 +11,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
         public String type {  get; set; }
         public double lon {  get; set; }
         public double lat {  get; set; }
+        public string state {  get; set; }
+        public string full_address {  get; set; }
     }
 }

@@ -250,6 +250,26 @@
     <Compile Include="Migrations\202312061647366_NewManyToManyTable.designer.cs">
       <DependentUpon>202312061647366_NewManyToManyTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312082039340_regionData.cs" />
+    <Compile Include="Migrations\202312082039340_regionData.designer.cs">
+      <DependentUpon>202312082039340_regionData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312082041576_newData2.cs" />
+    <Compile Include="Migrations\202312082041576_newData2.designer.cs">
+      <DependentUpon>202312082041576_newData2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312082052263_regionDataNew.cs" />
+    <Compile Include="Migrations\202312082052263_regionDataNew.designer.cs">
+      <DependentUpon>202312082052263_regionDataNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312082054037_regionNewData2.cs" />
+    <Compile Include="Migrations\202312082054037_regionNewData2.designer.cs">
+      <DependentUpon>202312082054037_regionNewData2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312082056292_newAddressAndRegionData.cs" />
+    <Compile Include="Migrations\202312082056292_newAddressAndRegionData.designer.cs">
+      <DependentUpon>202312082056292_newAddressAndRegionData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClosestDTO.cs" />
@@ -262,10 +282,12 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ObjectTypesModel.cs" />
+    <Compile Include="Models\Region.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\DistanceService.cs" />
     <Compile Include="Service\FilterService.cs" />
     <Compile Include="Service\Filters\FilterByName.cs" />
+    <Compile Include="Service\Filters\FilterByRegion.cs" />
     <Compile Include="Service\Filters\FilterByType.cs" />
     <Compile Include="Service\Filters\Pipe.cs" />
     <Compile Include="Service\Filters\IFilter.cs" />
@@ -300,6 +322,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\json_data\result.json" />
+    <Content Include="Content\json_data\historical_cultural_objects.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -413,6 +436,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312061647366_NewManyToManyTable.resx">
       <DependentUpon>202312061647366_NewManyToManyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312082039340_regionData.resx">
+      <DependentUpon>202312082039340_regionData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312082041576_newData2.resx">
+      <DependentUpon>202312082041576_newData2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312082052263_regionDataNew.resx">
+      <DependentUpon>202312082052263_regionDataNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312082054037_regionNewData2.resx">
+      <DependentUpon>202312082054037_regionNewData2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312082056292_newAddressAndRegionData.resx">
+      <DependentUpon>202312082056292_newAddressAndRegionData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

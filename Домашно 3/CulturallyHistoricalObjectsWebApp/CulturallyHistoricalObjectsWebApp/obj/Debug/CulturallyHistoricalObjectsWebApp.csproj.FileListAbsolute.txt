@@ -274,3 +274,8 @@ C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalO
 C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.WishListMigration3.resources
 C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.WishListMigration4.resources
 C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.NewManyToManyTable.resources
+C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.regionData.resources
+C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.newData2.resources
+C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.regionDataNew.resources
+C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.regionNewData2.resources
+C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.newAddressAndRegionData.resources

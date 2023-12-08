@@ -150,6 +150,7 @@
             <tr>
                 <th>Type</th>
                 <th>Name</th>
+                <th>Region</th>
                 <th>Distance</th>
                 <th>Action</th>
             </tr>
@@ -162,6 +163,7 @@
                     <td>
                         @Html.ActionLink(kvp.Value.HistoricalCulturalObjects.name, "Details", new { id = kvp.Value.HistoricalCulturalObjects.id }, new { @class = "details_style" })
                     </td>
+                    <td>@kvp.Value.HistoricalCulturalObjects.region.name</td>
                     <td>@kvp.Value.distance km</td>
                     <td class="button-column">
                         <div class="buttons-row">
