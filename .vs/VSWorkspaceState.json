@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Домашно 3",
+    "\\Домашно 3\\CulturallyHistoricalObjectsWebApp",
+    "\\Домашно 3\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp",
+    "\\Домашно 3\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Service"
   ],
-  "SelectedNode": "\\CulturallyHistoricalObjectsWebApp.sln (Домашно 3\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.sln)",
+  "SelectedNode": "\\Домашно 3\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Service\\DistanceService.cs",
   "PreviewInSolutionExplorer": false
 }

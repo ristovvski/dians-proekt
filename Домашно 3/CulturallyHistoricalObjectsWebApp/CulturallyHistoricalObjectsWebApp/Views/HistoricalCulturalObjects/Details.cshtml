@@ -3,48 +3,100 @@
 @{
     ViewBag.Title = "Details";
 }
+<head>
 
-<h2>Details</h2>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
 
-<div>
-    <h4>HistoricalCulturalObjects</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.name)
-        </dt>
+    <style>
+        #map {
+            height: 600px;
 
-        <dd>
-            @Html.DisplayFor(model => model.name)
-        </dd>
+        }
+    </style>
+    <script>
+        // Wait for the DOM content to load
+        document.addEventListener('DOMContentLoaded', function() {
+            var lon = @Html.Raw(Json.Encode(Model.lon)); // Get lon value from model
+            var lat = @Html.Raw(Json.Encode(Model.lat)); // Get lat value from model
+            addOnMap(lon, lat); // Call the function with lon and lat
+        });
 
-        <dt>
-            @Html.DisplayNameFor(model => model.type)
-        </dt>
+        function addOnMap(lon, lat) {
+            console.log(lon)
 
-        <dd>
-            @Html.DisplayFor(model => model.type)
-        </dd>
+            console.log(lat)
+            var mapOptions = {
+                center: [lat, lon],
+                zoom: 15
+            }
 
-        <dt>
-            @Html.DisplayNameFor(model => model.lon)
-        </dt>
+            // Creating a map object
+            var map = new L.map('map', mapOptions); // Change ‘map’ to 'map'
 
-        <dd>
-            @Html.DisplayFor(model => model.lon)
-        </dd>
+            // Creating a Layer object
+            var layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
-        <dt>
-            @Html.DisplayNameFor(model => model.lat)
-        </dt>
+            // Adding layer to the map
+            map.addLayer(layer);
 
-        <dd>
-            @Html.DisplayFor(model => model.lat)
-        </dd>
+            var marker = L.marker([lat, lon]).addTo(map);
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        }
+    </script>
+</head>
+<body>
+    <h2>Details</h2>
+
+    <div>
+        <h4>HistoricalCulturalObjects</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.type)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.type)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.lon)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.lon)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.lat)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.lat)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+    <div id="map" ></div>
+
+
+</body>

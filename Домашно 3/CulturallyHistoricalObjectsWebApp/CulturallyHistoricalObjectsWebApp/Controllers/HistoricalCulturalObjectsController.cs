@@ -58,20 +58,56 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         {
             List<HistoricalCulturalObjects> objects = filterService.filterObjects(model);
 
-            ClosestFavoriteDTO closestFavoriteDTO = new ClosestFavoriteDTO();
+            if (model.userLongitude == 0 || model.userLatitude == 0)
+            {
+                return RedirectToAction("UserLocation");
+            }
+            else
+            {
 
-            closestFavoriteDTO.closestDistance = distanceService.distance(model, objects);
+                ClosestFavoriteDTO closestFavoriteDTO = new ClosestFavoriteDTO();
 
+                closestFavoriteDTO.closestDistance = distanceService.distance(model, objects);
+
+                var userId = User.Identity.GetUserId();
+                var currentUser = db.Users.Find(userId);
+
+                List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
+
+                closestFavoriteDTO.favoritePlacesIds = currentUserFavoriteIds;
+
+                return View(closestFavoriteDTO);
+            }
+        }
+
+        public ActionResult FavoritePlaces()
+        {
             var userId = User.Identity.GetUserId();
             var currentUser = db.Users.Find(userId);
 
             List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
 
-            closestFavoriteDTO.favoritePlacesIds = currentUserFavoriteIds;
 
-            return View(closestFavoriteDTO);
+            List<HistoricalCulturalObjects> places = new List<HistoricalCulturalObjects>();
+
+            foreach (var id in currentUserFavoriteIds)
+            {
+                var place = db.culturalObjects.Find(id);
+                if (place != null)
+                {
+                    places.Add(place);
+                }
+            }
+
+            return View(places);
         }
 
+        public ActionResult UserLocation()
+        {
+            FilterDTO model = new FilterDTO();
+
+            return View(model);
+        }
         // GET: HistoricalCulturalObjects/Details/5
         public ActionResult Details(int? id)
         {

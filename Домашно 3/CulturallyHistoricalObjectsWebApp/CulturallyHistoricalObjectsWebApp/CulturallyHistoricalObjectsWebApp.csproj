@@ -350,6 +350,8 @@
     <Content Include="Views\Account\AddUserToRole.cshtml" />
     <Content Include="Views\HistoricalCulturalObjects\FindClosest.cshtml" />
     <Content Include="Views\HistoricalCulturalObjects\FindAll.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\UserLocation.cshtml" />
+    <Content Include="Views\HistoricalCulturalObjects\FavoritePlaces.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

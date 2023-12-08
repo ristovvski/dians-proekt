@@ -87,6 +87,11 @@
             width: 100%;
         }
 
+        .details_style{
+            color: white;
+            text-decoration: none;
+        }
+
         @@media only screen and (max-width: 600px) {
             table {
                 width: 90%;
@@ -154,7 +159,9 @@
             {
                 <tr>
                     <td>@kvp.Key</td>
-                    <td>@kvp.Value.HistoricalCulturalObjects.name</td>
+                    <td>
+                        @Html.ActionLink(kvp.Value.HistoricalCulturalObjects.name, "Details", new { id = kvp.Value.HistoricalCulturalObjects.id }, new { @class = "details_style" })
+                    </td>
                     <td>@kvp.Value.distance km</td>
                     <td class="button-column">
                         <div class="buttons-row">

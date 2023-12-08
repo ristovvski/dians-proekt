@@ -16,60 +16,26 @@
                 $('#actionType').val('FindAll');
             });
 
+            // Retrieve geolocation if available
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var userLatitude = position.coords.latitude;
+                    var userLongitude = position.coords.longitude;
+
+                    $('#userLatitude').val(userLatitude);
+                    $('#userLongitude').val(userLongitude);
+                });
+            } else {
+                alert("Your browser doesn't support Geolocation which is needed for the Find Closest option");
+            }
+
             $('#findClosestBtn').click(function () {
                 // Set the action type
                 $('#actionType').val('FindClosest');
-
-                // Retrieve geolocation if available
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function (position) {
-                        var userLatitude = position.coords.latitude;
-                        var userLongitude = position.coords.longitude;
-
-                        // Set the values of hidden inputs
-                        $('<input>').attr({
-                            type: 'hidden',
-                            id: 'userLatitude',
-                            name: 'userLatitude',
-                            value: userLatitude
-                        }).appendTo('form');
-
-                        $('<input>').attr({
-                            type: 'hidden',
-                            id: 'userLongitude',
-                            name: 'userLongitude',
-                            value: userLongitude
-                        }).appendTo('form');
-
-                        // Submit the form after setting the geolocation values
-                        $('form').submit();
-                    });
-                } else {
-                    alert("Your browser doesn't support Geolocation which is needed for the Find Closest option");
-                }
+                $('form').submit();
                 return false; // Prevent the default form submission
             });
         });
-
-        function showPosition(position) {
-            var userLatitude = position.coords.latitude;
-            var userLongitude = position.coords.longitude;
-
-            // Append hidden input fields with user's latitude and longitude
-            $('<input>').attr({
-                type: 'hidden',
-                id: 'userLatitude',
-                name: 'userLatitude',
-                value: userLatitude
-            }).appendTo('form');
-
-            $('<input>').attr({
-                type: 'hidden',
-                id: 'userLongitude',
-                name: 'userLongitude',
-                value: userLongitude
-            }).appendTo('form');
-        }
     </script>
 </head>
 <body>
@@ -92,7 +58,11 @@
                 @Html.Label("Select category", new { @class = "label-style"})
                 @Html.DropDownListFor(model => model.type_id, new SelectList(Model.types, "id", "type"), "Select category", new { @class = "select-style"})
 
+                @Html.HiddenFor(model => model.userLatitude, new { @id = "userLatitude"})
+                @Html.HiddenFor(model => model.userLongitude, new { @id = "userLongitude"})
+
                 @Html.Hidden("actionType", "", new { id = "actionType" })
+
                 <br />
                 <button type="submit" id="findAllBtn">Find All</button>
                 <button type="submit" id="findClosestBtn">Find Closest</button>

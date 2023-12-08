@@ -19,9 +19,11 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Historical/Cultural Objects", "Index", "HistoricalCulturalObjects", new { area = "" }, new { @class = "nav-link" })</li>
-                     @if (User.IsInRole("Administrator")) {
+                    @if (User.IsInRole("Administrator"))
+                    {
                         <li>@Html.ActionLink("Add user to Role", "AddUserToRole", "Account", new { area = "" }, new { @class = "nav-link" })</li>
-                     }
+                    }
+                    <li>@Html.ActionLink("Favorites", "FavoritePlaces", "HistoricalCulturalObjects", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
                  @Html.Partial("_LoginPartial")
             </div>

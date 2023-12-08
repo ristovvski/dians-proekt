@@ -87,6 +87,11 @@
             width: 100%;
         }
 
+        .details_style {
+            color: white;
+            text-decoration: none;
+        }
+
         @@media only screen and (max-width: 600px) {
             table {
                 width: 90%;
@@ -127,7 +132,7 @@
                             $form.attr('action', '/Account/AddToFavorite')
                             alert("Place removed from favorites!")
                         }
-                    
+
                     },
                     error: function (jqXHR) {
                         // Show alert message with the error message from the JSON response
@@ -154,7 +159,9 @@
             @foreach (var obj in Model.HistoricalCulturalObjects)
             {
                 <tr>
-                    <td>@obj.name</td>
+                    <td>
+                        @Html.ActionLink(obj.name, "Details", new { id = obj.id}, new { @class = "details_style" })
+                    </td>
                     <td>@obj.lon</td>
                     <td>@obj.lat</td>
                     <td>@(obj.type != null ? obj.type.type : "")</td>
