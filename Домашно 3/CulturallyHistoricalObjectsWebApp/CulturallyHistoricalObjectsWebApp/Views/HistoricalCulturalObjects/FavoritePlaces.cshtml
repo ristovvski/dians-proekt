@@ -150,6 +150,7 @@
                 <th>Longitude</th>
                 <th>Latitude</th>
                 <th>Type</th>
+                <th>Region</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -163,6 +164,7 @@
                     <td>@obj.lon</td>
                     <td>@obj.lat</td>
                     <td>@(obj.type != null ? obj.type.type : "")</td>
+                    <td>@(obj.region != null ? obj.region.name : "")</td>
                     <td class="button-column">
                         <div class="buttons-row">
                             @using (Html.BeginForm("RemoveFromFavorites", "Account", FormMethod.Post, new { @class = "favorite-form" }))
