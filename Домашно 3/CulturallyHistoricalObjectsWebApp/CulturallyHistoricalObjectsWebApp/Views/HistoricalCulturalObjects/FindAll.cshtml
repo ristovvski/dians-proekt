@@ -15,7 +15,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            height: 100%;
             width: 100%;
         }
 
@@ -123,6 +123,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+          
             $(".favorite-button").click(function (e) {
                 e.preventDefault();
                 var $form = $(this).closest('form');
@@ -157,7 +158,7 @@
     </script>
 </head>
 <body>
-    <table>
+    <table id="places_table">
         <thead>
             <tr>
                 <th class="name-column">Name</th>
@@ -210,7 +211,7 @@
 
                                 using (Html.BeginForm("Delete", "HistoricalCulturalObjects", new { id = obj.id }, FormMethod.Get, new { @class = "form-inline" }))
                                 {
-                                    <button type="submit" class="red-button">Delete</button>
+                                    <button data-place="@obj.id" type="submit" class="red-button js_delete">Delete</button>
                                 }
                             }
                         </div>

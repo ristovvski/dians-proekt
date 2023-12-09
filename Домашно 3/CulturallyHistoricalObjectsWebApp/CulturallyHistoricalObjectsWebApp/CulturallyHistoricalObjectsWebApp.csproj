@@ -274,6 +274,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClosestDTO.cs" />
     <Compile Include="Models\ClosestFavoriteDTO.cs" />
+    <Compile Include="Models\EditDTO.cs" />
     <Compile Include="Models\FavoritePlaces.cs" />
     <Compile Include="Models\FilterDTO.cs" />
     <Compile Include="Models\HCObjectsDTO.cs" />

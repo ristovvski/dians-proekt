@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Numerics;
 using System.Web;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
@@ -98,6 +99,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
 
             return View(model);
         }
+
         // GET: HistoricalCulturalObjects/Details/5
         public ActionResult Details(int? id)
         {
@@ -119,7 +121,11 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         // GET: HistoricalCulturalObjects/Create
         public ActionResult Create()
         {
-            return View();
+            EditDTO edit = new EditDTO();
+            edit.regions = db.regions.ToList();
+            edit.objectTypes = db.objectTypes.ToList();
+            edit.historicalCultralObject = new HistoricalCulturalObjects();
+            return View(edit);
         }
 
         // POST: HistoricalCulturalObjects/Create
@@ -128,10 +134,13 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         [HttpPost]
         [Authorize(Roles = "Administrator")]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,name,type,lon,lat")] HistoricalCulturalObjects historicalCulturalObjects)
+        public ActionResult Create(EditDTO create)
         {
+            HistoricalCulturalObjects historicalCulturalObjects = create.historicalCultralObject;
             if (ModelState.IsValid)
             {
+                historicalCulturalObjects.region = db.regions.Find(create.region_id);
+                historicalCulturalObjects.type = db.objectTypes.Find(create.objectTypeId);
                 db.culturalObjects.Add(historicalCulturalObjects);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -148,12 +157,19 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            EditDTO edit = new EditDTO();
             HistoricalCulturalObjects historicalCulturalObjects = db.culturalObjects.Find(id);
             if (historicalCulturalObjects == null)
             {
                 return HttpNotFound();
             }
-            return View(historicalCulturalObjects);
+            edit.historicalCultralObject = db.culturalObjects
+                .Include(hco => hco.type)
+                .Include(hco => hco.region)
+                .FirstOrDefault(hco => hco.id == id); 
+            edit.regions = db.regions.ToList();
+            edit.objectTypes = db.objectTypes.ToList();
+            return View(edit);
         }
 
         // POST: HistoricalCulturalObjects/Edit/5
@@ -162,15 +178,28 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Administrator")]
-        public ActionResult Edit([Bind(Include = "id,name,type,lon,lat")] HistoricalCulturalObjects historicalCulturalObjects)
+        public ActionResult Edit(EditDTO edit)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(historicalCulturalObjects).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                HistoricalCulturalObjects historicalCulturalObjects = db.culturalObjects
+                .Include(hco => hco.type)
+                .Include(hco => hco.region)
+                .FirstOrDefault(hco => hco.id == edit.historicalCultralObject.id);
+
+                if (historicalCulturalObjects != null)
+                {
+                    historicalCulturalObjects.region = db.regions.Find(edit.region_id);                    
+                    historicalCulturalObjects.type = db.objectTypes.Find(edit.objectTypeId);
+
+                    // Update the tracked entity properties
+                    db.Entry(historicalCulturalObjects).CurrentValues.SetValues(edit.historicalCultralObject);
+
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
             }
-            return View(historicalCulturalObjects);
+            return View(edit.historicalCultralObject);
         }
 
         // GET: HistoricalCulturalObjects/Delete/5
@@ -181,7 +210,10 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HistoricalCulturalObjects historicalCulturalObjects = db.culturalObjects.Find(id);
+            HistoricalCulturalObjects historicalCulturalObjects = db.culturalObjects
+                .Include(hco => hco.type)
+                .Include(hco => hco.region)
+                .FirstOrDefault(hco => hco.id == id);
             if (historicalCulturalObjects == null)
             {
                 return HttpNotFound();
