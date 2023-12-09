@@ -64,6 +64,10 @@
         font-size: 14px;
         width: 30%; 
       }
+      
+      button:hover {
+        background-color: #f39c12; /* Darker shade on hover */
+      }
 
       
       @@media only screen and (max-width: 600px) {
@@ -93,8 +97,8 @@
         </div>
         <dl class="dl-horizontal">
             <div class="option">
-                <label>External Logins: @Model.Logins.Count</label>
-                <button id="manage-external-logins">Manage</button>
+                @*<label>External Logins: @Model.Logins.Count</label>
+                <button id="manage-external-logins">Manage</button>*@
             </div>
             @*
                 Phone Numbers can used as a second factor of verification in a two-factor authentication system.
@@ -156,9 +160,9 @@
 </main>
 <script>
     // JavaScript to handle registration button click
-    document.getElementById('manage-external-logins').addEventListener('click', function() {
+    /*document.getElementById('manage-external-logins').addEventListener('click', function() {
         window.location.href = '@Url.Action("ManageLogins", "Manage")';
-    });
+    });*/
     document.getElementById('change-password').addEventListener('click', function() {
             window.location.href = '@Url.Action("ChangePassword", "Manage")';
         });
