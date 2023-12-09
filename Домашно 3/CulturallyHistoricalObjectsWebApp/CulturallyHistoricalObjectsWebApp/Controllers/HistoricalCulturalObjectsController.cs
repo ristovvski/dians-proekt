@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
 using CulturallyHistoricalObjectsWebApp.Service;
+using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
 
 namespace CulturallyHistoricalObjectsWebApp.Controllers
@@ -87,20 +88,8 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             var currentUser = db.Users.Find(userId);
 
             List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
-
-
-            List<HistoricalCulturalObjects> places = new List<HistoricalCulturalObjects>();
-
-            foreach (var id in currentUserFavoriteIds)
-            {
-                var place = db.culturalObjects.Find(id);
-                if (place != null)
-                {
-                    places.Add(place);
-                }
-            }
-
-            return View(places);
+            List<HistoricalCulturalObjects> objects = db.culturalObjects.Include("type").Include("region").ToList();
+            return View(currentUserFavoriteIds.Select(c => objects.Where(o=> o.id==c).First()).ToList());
         }
 
         public ActionResult UserLocation()
@@ -116,7 +105,9 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HistoricalCulturalObjects historicalCulturalObjects = db.culturalObjects.Find(id);
+
+            HistoricalCulturalObjects historicalCulturalObjects =
+                db.culturalObjects.Include("type").Include("region").ToList().Where(c=>c.id==id).First();
             if (historicalCulturalObjects == null)
             {
                 return HttpNotFound();
