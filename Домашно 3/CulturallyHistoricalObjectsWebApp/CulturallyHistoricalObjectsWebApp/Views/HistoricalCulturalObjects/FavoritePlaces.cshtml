@@ -124,12 +124,10 @@
                             $button.text("Favorite");
                             $button.removeClass("red-button").addClass("yellow-button");
                             $form.attr('action', '/Account/AddToFavorite');
-                            alert("Place removed from favorites!");
                         } else {
                             $button.text("Remove");
                             $button.removeClass("yellow-button").addClass("red-button");
                             $form.attr('action', '/Account/RemoveFromFavorites');
-                            alert("Place added to favorites!");
                         }
                     },
                     error: function (jqXHR) {

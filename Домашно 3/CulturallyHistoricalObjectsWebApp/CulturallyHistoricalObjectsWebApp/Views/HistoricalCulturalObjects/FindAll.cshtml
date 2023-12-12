@@ -1,4 +1,4 @@
-﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCOUserDTO
+﻿﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCOUserDTO
 @using Microsoft.AspNet.Identity
 @using Microsoft.AspNet.Identity.EntityFramework
 
@@ -63,17 +63,17 @@
             justify-content: space-around;
             margin-top: 10px;
         }
-        
-        .info-columns{
-        width: 15%;
+
+        .info-columns {
+            width: 15%;
         }
-        
-        .name-column{
-        width: 20%;
+
+        .name-column {
+            width: 20%;
         }
-        
-        .coordinates-column{
-        width: 10%;
+
+        .coordinates-column {
+            width: 10%;
         }
 
         .yellow-button {
@@ -123,7 +123,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-          
+
             $(".favorite-button").click(function (e) {
                 e.preventDefault();
                 var $form = $(this).closest('form');
@@ -138,12 +138,10 @@
                             $button.text("Remove");
                             $button.removeClass("yellow-button").addClass("red-button");
                             $form.attr('action', '/Account/RemoveFromFavorites')
-                            alert("Place added to favorites!")
                         } else {
                             $button.text("Favorite");
                             $button.removeClass("red-button").addClass("yellow-button");
                             $form.attr('action', '/Account/AddToFavorite')
-                            alert("Place removed from favorites!")
                         }
 
                     },
@@ -174,7 +172,7 @@
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(obj.name, "Details", new { id = obj.id}, new { @class = "details_style" })
+                        @Html.ActionLink(obj.name, "Details", new { id = obj.id }, new { @class = "details_style" })
                     </td>
                     <td>@obj.lon</td>
                     <td>@obj.lat</td>
