@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '6.0.x'
           
       - name: Restore
-        run: dotnet restore culturallyhistoricalobjectswebapp/culturallyhistoricalobjectswebapp.sln
+        run: dotnet restore /Домашно 3/culturallyhistoricalobjectswebapp/culturallyhistoricalobjectswebapp.sln
         
       - name: Build
-        run: dotnet build culturallyhistoricalobjectswebapp/culturallyhistoricalobjectswebapp.sln --configuration Release --no-restore
+        run: dotnet build /Домашно 3/culturallyhistoricalobjectswebapp/culturallyhistoricalobjectswebapp.sln --configuration Release --no-restore
         
       - name: Publish
-        run: dotnet publish culturallyhistoricalobjectswebapp/culturallyhistoricalobjectswebapp.sln --configuration Release --no-build 
+        run: dotnet publish /Домашно 3/culturallyhistoricalobjectswebapp/culturallyhistoricalobjectswebapp.sln --configuration Release --no-build 
