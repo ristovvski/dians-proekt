@@ -270,6 +270,10 @@
     <Compile Include="Migrations\202312082056292_newAddressAndRegionData.designer.cs">
       <DependentUpon>202312082056292_newAddressAndRegionData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312182252223_testMigration1.cs" />
+    <Compile Include="Migrations\202312182252223_testMigration1.designer.cs">
+      <DependentUpon>202312182252223_testMigration1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClosestDTO.cs" />
@@ -452,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312082056292_newAddressAndRegionData.resx">
       <DependentUpon>202312082056292_newAddressAndRegionData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312182252223_testMigration1.resx">
+      <DependentUpon>202312182252223_testMigration1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

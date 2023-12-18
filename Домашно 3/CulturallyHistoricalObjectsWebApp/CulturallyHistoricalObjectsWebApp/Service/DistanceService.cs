@@ -16,19 +16,19 @@ namespace CulturallyHistoricalObjectsWebApp.Service
             return angleIn10thofaDegree * Math.PI / 180;
         }
 
-        public Dictionary<string, ClosestDTO> distance(FilterDTO model, List<HistoricalCulturalObjects> objects)
+        public ClosestDTO distance(FilterDTO model, List<HistoricalCulturalObjects> objects)
         {
-
-            
-            
-            Dictionary<string, ClosestDTO> objectsByType = new Dictionary<string, ClosestDTO>();
-
             objects = objects.OrderBy(o => o.id).ToList();
+
+            HistoricalCulturalObjects closest = objects.ElementAt(0);
+
+            bool flag = true;
+            double minDistance = 9999.99;
+
+            ClosestDTO temp = new ClosestDTO();
 
             foreach (HistoricalCulturalObjects obj in objects)
             {
-                ClosestDTO temp = new ClosestDTO();
-
                 double lon1 = toRadians(model.userLongitude);
                 double lat1 = toRadians(model.userLatitude);
 
@@ -44,26 +44,31 @@ namespace CulturallyHistoricalObjectsWebApp.Service
 
                 double r = 6371;
                 double distance = c * r;
-                temp.distance = Math.Round(distance, 2);
-                temp.HistoricalCulturalObjects = obj;
 
-                if (!objectsByType.ContainsKey(obj.type.type))
+                distance = Math.Round(distance, 2);
+
+                if (flag)
                 {
-                    objectsByType[obj.type.type] = temp;
+                    temp.HistoricalCulturalObjects = obj;
+                    temp.distance = distance;
+                    flag = false;
                 }
                 else
                 {
 
-                    // Compare the calculated distance with the existing distance for the type
-                    if (temp.distance < objectsByType[obj.type.type].distance)
+                    if (distance < minDistance)
                     {
-                        // If the new distance is smaller, update the value in the dictionary
-                        objectsByType[obj.type.type] = temp;
+                        temp.HistoricalCulturalObjects = obj;
+                        temp.distance = distance;
+                        minDistance = distance;
                     }
                 }
+
+                Console.WriteLine(obj.name + " " + distance + " \n");
+
             }
 
-            return objectsByType;
+            return temp;
         }
     }
 }

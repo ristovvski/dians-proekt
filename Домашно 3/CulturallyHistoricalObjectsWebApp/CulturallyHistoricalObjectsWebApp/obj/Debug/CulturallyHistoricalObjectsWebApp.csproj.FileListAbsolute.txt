@@ -425,3 +425,4 @@ C:\Users\Bxbi\RiderProjects\dians-proekt\Домашно 3\CulturallyHistoricalOb
 C:\Users\Bxbi\RiderProjects\dians-proekt\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.csproj.CopyComplete
 C:\Users\Bxbi\RiderProjects\dians-proekt\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.dll
 C:\Users\Bxbi\RiderProjects\dians-proekt\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.pdb
+C:\Users\vanes\Source\Repos\dians-proekt3\Домашно 3\CulturallyHistoricalObjectsWebApp\CulturallyHistoricalObjectsWebApp\obj\Debug\CulturallyHistoricalObjectsWebApp.Migrations.testMigration1.resources

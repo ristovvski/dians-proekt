@@ -7,7 +7,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
 {
     public class ClosestFavoriteDTO
     {
-        public Dictionary<string, ClosestDTO> closestDistance {  get; set; }
+        public ClosestDTO closestDistance {  get; set; }
 
         public List<int> favoritePlacesIds { get; set; }
     }

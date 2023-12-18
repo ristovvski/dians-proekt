@@ -113,6 +113,7 @@ button {
         background-color: #f39c12;
     }
 
+
 @media only screen and (max-width: 800px) {
     .form-style {
         width: 80%;
@@ -143,4 +144,6 @@ button {
     body {
         padding: 0px;
     }
+
+
 }
