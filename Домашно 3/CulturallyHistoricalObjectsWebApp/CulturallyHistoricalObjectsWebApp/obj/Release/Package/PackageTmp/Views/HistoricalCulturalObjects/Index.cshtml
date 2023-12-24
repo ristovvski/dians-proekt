@@ -1,0 +1,107 @@
+﻿﻿@model CulturallyHistoricalObjectsWebApp.Models.FilterDTO
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../../Content/style/style.css">
+
+    <style>
+
+        .loader {
+            border: 4px solid rgba(0, 0, 0, 0.3);
+            border-top: 4px solid #f1c40f;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+            margin-left: -20px;
+            display: none; /* Initially hidden */
+        }
+
+        @@keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('#findAllBtn').click(function () {
+                $('#actionType').val('FindAll');
+            });
+
+            $('#findClosestBtn').click(function () {
+                $('#loader').show();
+
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        var userLatitude = position.coords.latitude;
+                        var userLongitude = position.coords.longitude;
+
+                        $('#userLatitude').val(userLatitude);
+                        $('#userLongitude').val(userLongitude);
+
+                        // Set the action type
+                        $('#actionType').val('FindClosest');
+                        $('form').submit();
+
+                        $('#loader').hide();
+
+                    });
+                } else {
+                    alert("Your browser doesn't support Geolocation which is needed for the Find Closest option");
+
+                    $('#loader').hide();
+                }
+                return false; // Prevent the default form submission
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header-style">
+        <p style="font-size: 18px">
+            CulturaLocator is a web application that will help you find Culturally Historical Objects in N. Macedonia 
+        </p>
+    </header>
+    <div class="loader" id="loader"></div>
+    <div>
+        <div>
+            @using (Html.BeginForm("Filter", "HistoricalCulturalObjects", FormMethod.Post, new { @class = "form-style" }))
+            {
+
+                @Html.LabelFor(model => model.name, "Name:", new { @class = "label-style" })
+                @Html.TextBoxFor(model => model.name, new { @class = "input-text-style" })
+                @Html.Label("Select category", new { @class = "label-style" })
+                @Html.DropDownListFor(model => model.type_id, new SelectList(Model.types, "id", "type"), "Select category", new { @class = "select-style" })
+
+                @Html.Label("Select region", new { @class = "label-style" })
+                @Html.DropDownListFor(model => model.region_id, new SelectList(Model.regions, "id", "name"), "Select category", new { @class = "select-style" })
+
+
+                @Html.HiddenFor(model => model.userLatitude, new { @id = "userLatitude" })
+                @Html.HiddenFor(model => model.userLongitude, new { @id = "userLongitude" })
+
+                @Html.Hidden("actionType", "", new { id = "actionType" })
+
+                <br />
+                <button type="submit" id="findAllBtn">Find All</button>
+                <button type="submit" id="findClosestBtn">Find Closest</button>
+            }
+        </div>
+    </div>
+</body>
