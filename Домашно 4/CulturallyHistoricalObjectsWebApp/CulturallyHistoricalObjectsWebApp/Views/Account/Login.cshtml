@@ -1,0 +1,40 @@
+﻿@using CulturallyHistoricalObjectsWebApp.Models
+@model LoginViewModel
+
+@{
+    Layout = "";
+}
+
+<head>
+    <link rel="stylesheet" href="../../Content/style/style.css">
+
+    <title>Login</title>
+</head>
+
+<body class="body-login">
+    <div class="row">
+        <div>
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", @class = "form-login-style" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.LabelFor(m => m.Email, new { @class = "label-style" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "input-text-style" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                @Html.LabelFor(m => m.Password, new { @class = "label-style" })
+                @Html.PasswordFor(m => m.Password, new { @class = "input-text-style" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                <button type="submit">Log in</button>
+                <button type="button" id="registerButton">Register</button>
+            }
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // JavaScript to handle registration button click
+    document.getElementById('registerButton').addEventListener('click', function() {
+        window.location.href = '@Url.Action("Register", "Account")';
+    });
+</script>

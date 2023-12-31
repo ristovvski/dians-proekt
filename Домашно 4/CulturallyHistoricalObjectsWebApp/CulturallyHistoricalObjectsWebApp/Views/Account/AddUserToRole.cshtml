@@ -1,0 +1,28 @@
+﻿@model CulturallyHistoricalObjectsWebApp.Models.AddUserToRoleModel
+@{
+    ViewBag.Title = "AddUserToRole";
+}
+
+<head>
+    <link rel="stylesheet" href="../../Content/style/style.css">
+</head>
+@if (User.IsInRole("Administrator"))
+{
+  <h1 style="font-size: 36px">Add User To Role</h1>
+
+    using (Html.BeginForm("AddUserToRole", "Account",FormMethod.Post,new { @class = "addRoleForm" }))
+    {
+      <div class="row" style="justify-content: center;">
+            @Html.Label("Email", new {@class="label-style"})
+            @Html.TextBoxFor(a => a.Email, new { @class="input-text-style" })
+            </div>
+            <div class="row" style="justify-content: center;">
+            @Html.DropDownListFor(a => a.SelectedRole, new SelectList(Model.Roles),new { @class = "select-style" })
+            </div>
+        <button type="submit">Add Role</button>
+    }
+}
+else
+{
+    <h2>You are not Administrator! How did you get here?</h2>
+}

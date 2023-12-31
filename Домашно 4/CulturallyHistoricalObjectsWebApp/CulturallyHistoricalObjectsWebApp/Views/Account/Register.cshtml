@@ -1,0 +1,28 @@
+﻿@model CulturallyHistoricalObjectsWebApp.Models.RegisterViewModel
+@{
+    Layout = "";
+}
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="../../Content/style/style.css">
+
+</head>
+<body class="body-login">
+    <div class="row">
+        <div>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form", @class = "form-login-style" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                @Html.LabelFor(m => m.Email, new { @class = "label-style" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "input-text-style" })
+                @Html.LabelFor(m => m.Password, new { @class = "label-style" })
+                @Html.PasswordFor(m => m.Password, new { @class = "input-text-style" })
+
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "label-style" })
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "input-text-style" })
+                <button type="submit">Register</button>
+            }
+        </div>
+    </div>
+</body>

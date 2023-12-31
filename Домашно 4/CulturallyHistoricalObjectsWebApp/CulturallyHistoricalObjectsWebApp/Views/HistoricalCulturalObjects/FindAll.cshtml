@@ -1,0 +1,75 @@
+﻿﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCOUserDTO
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+
+<head>
+    <title>Find all</title>
+
+    <link rel="stylesheet" href="../../Content/style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/favoriteAjax.js"></script>
+</head>
+<body>
+    <table id="places_table">
+        <thead>
+            <tr>
+                <th class="name-column">Name</th>
+                <th class="coordinates-column">Longitude</th>
+                <th class="coordinates-column">Latitude</th>
+                <th class="info-columns">Type</th>
+                <th class="info-columns">Region</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model.HistoricalCulturalObjects)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(obj.name, "Details", new { id = obj.id }, new { @class = "details_style" })
+                    </td>
+                    <td>@obj.lon</td>
+                    <td>@obj.lat</td>
+                    <td>@(obj.type != null ? obj.type.type : "")</td>
+                    <td>@(obj.region != null ? obj.region.name : "")</td>
+                    <td class="button-column">
+                        <div class="buttons-row">
+                            @{
+                                bool isInFavorite = Model.favoritePlacesIds.Contains(obj.id);
+                            }
+                            @if (!isInFavorite)
+                            {
+                                using (Html.BeginForm("AddToFavorite", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                                {
+                                    @Html.Hidden("id", obj.id) <!-- Use "id" as the parameter name -->
+                                    <button place-id="@obj.id" type="submit" class="yellow-button favorite-button">Favorite</button>
+                                }
+                            }
+                            else
+                            {
+                                using (Html.BeginForm("RemoveFromFavorites", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                                {
+                                    @Html.Hidden("id", obj.id) <!-- Use "id" as the parameter name -->
+                                    <button type="submit" class="red-button favorite-button">Remove</button>
+                                }
+                            }
+
+                            @if (User.IsInRole("Administrator"))
+                            {
+                                using (Html.BeginForm("Edit", "HistoricalCulturalObjects", new { id = obj.id }, FormMethod.Get, new { @class = "form-inline" }))
+                                {
+                                    <button type="submit" class="yellow-button">Edit</button>
+                                }
+
+                                using (Html.BeginForm("Delete", "HistoricalCulturalObjects", new { id = obj.id }, FormMethod.Get, new { @class = "form-inline" }))
+                                {
+                                    <button data-place="@obj.id" type="submit" class="red-button js_delete">Delete</button>
+                                }
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

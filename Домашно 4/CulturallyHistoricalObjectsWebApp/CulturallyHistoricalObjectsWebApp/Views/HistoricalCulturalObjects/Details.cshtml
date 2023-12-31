@@ -1,0 +1,91 @@
+﻿@model CulturallyHistoricalObjectsWebApp.Models.HistoricalCulturalObjects
+
+@{
+    ViewBag.Title = "Details";
+}
+<head>
+    <link rel="stylesheet" href="../../Content/style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script>
+        var lon = @Html.Raw(Json.Encode(Model.lon)); // Get lon value from model
+        var lat = @Html.Raw(Json.Encode(Model.lat)); // Get lat value from model
+    </script>
+    <script src="~/Scripts/laefletMap.js"></script>
+</head>
+<body>
+<div class="d-flex flex-row flex-wrap gap-2">
+    <div class="flex-fill">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.type)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.type.type)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.lon)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.lon)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.lat)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.lat)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.region)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.region.name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.address)
+            </dd>
+
+        </dl>
+            @if (User.IsInRole("Administrator"))
+            {
+            <button class="button-details" id="edit-btn">Edit</button>
+            }
+
+            @Html.ActionLink("Back to Index", "Index", "HistoricalCulturalObjects", new { @class = "action-link" })
+    </div>
+
+
+    <div id="map"></div>
+
+</div>
+</body>
+<script>
+    document.getElementById('edit-btn').addEventListener('click', function() {
+                window.location.href = '@Url.Action("Edit", "HistoricalCulturalObjects",new { id = Model.id })';
+            });
+</script>
