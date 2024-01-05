@@ -30,9 +30,11 @@ namespace CulturallyHistoricalObjectsWebApp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-
+        //culturalObject = HistoricalCulturalObjects in the database.
         public DbSet<HistoricalCulturalObjects> culturalObjects { get; set; }
+        //objectTypes = ObjectTypesModels in the database.
         public DbSet<ObjectTypesModel> objectTypes { get; set; }
+        //regions = Regions table in the database.
         public DbSet<Region> regions {  get; set; }
 
         public ApplicationDbContext()
@@ -41,6 +43,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
 
         }
 
+        //creating a separate Table for the Many to Many relation between User and HistoricalCUlturalObjects
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

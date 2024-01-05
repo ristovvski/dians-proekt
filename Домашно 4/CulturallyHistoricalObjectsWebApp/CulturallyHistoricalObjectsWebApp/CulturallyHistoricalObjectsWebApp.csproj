@@ -206,7 +206,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HistoricalCulturalObjectsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Data\AppDbSeeding.cs" />
+    <Compile Include="Data\DataReading.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,17 +234,9 @@
     <Compile Include="Migrations\202312061619525_WishListUpdate.designer.cs">
       <DependentUpon>202312061619525_WishListUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312061623126_WishListMigration2.cs" />
-    <Compile Include="Migrations\202312061623126_WishListMigration2.designer.cs">
-      <DependentUpon>202312061623126_WishListMigration2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202312061625556_WishListMigration3.cs" />
     <Compile Include="Migrations\202312061625556_WishListMigration3.designer.cs">
       <DependentUpon>202312061625556_WishListMigration3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312061638060_WishListMigration4.cs" />
-    <Compile Include="Migrations\202312061638060_WishListMigration4.designer.cs">
-      <DependentUpon>202312061638060_WishListMigration4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202312061647366_NewManyToManyTable.cs" />
     <Compile Include="Migrations\202312061647366_NewManyToManyTable.designer.cs">
@@ -254,32 +246,14 @@
     <Compile Include="Migrations\202312082039340_regionData.designer.cs">
       <DependentUpon>202312082039340_regionData.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312082041576_newData2.cs" />
-    <Compile Include="Migrations\202312082041576_newData2.designer.cs">
-      <DependentUpon>202312082041576_newData2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202312082052263_regionDataNew.cs" />
     <Compile Include="Migrations\202312082052263_regionDataNew.designer.cs">
       <DependentUpon>202312082052263_regionDataNew.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312082054037_regionNewData2.cs" />
-    <Compile Include="Migrations\202312082054037_regionNewData2.designer.cs">
-      <DependentUpon>202312082054037_regionNewData2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312082056292_newAddressAndRegionData.cs" />
-    <Compile Include="Migrations\202312082056292_newAddressAndRegionData.designer.cs">
-      <DependentUpon>202312082056292_newAddressAndRegionData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312182252223_testMigration1.cs" />
-    <Compile Include="Migrations\202312182252223_testMigration1.designer.cs">
-      <DependentUpon>202312182252223_testMigration1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ClosestDTO.cs" />
     <Compile Include="Models\ClosestFavoriteDTO.cs" />
-    <Compile Include="Models\EditDTO.cs" />
-    <Compile Include="Models\FavoritePlaces.cs" />
+    <Compile Include="Models\EditAndCreateDTO.cs" />
     <Compile Include="Models\FilterDTO.cs" />
     <Compile Include="Models\HCObjectsDTO.cs" />
     <Compile Include="Models\HistoricalCOUserDTO.cs" />
@@ -331,6 +305,7 @@
     <None Include="Properties\PublishProfiles\KulturoLokator - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\favoriteAjax.js" />
+    <Content Include="Scripts\GeoLocation.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -433,14 +408,8 @@
     <EmbeddedResource Include="Migrations\202312061619525_WishListUpdate.resx">
       <DependentUpon>202312061619525_WishListUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312061623126_WishListMigration2.resx">
-      <DependentUpon>202312061623126_WishListMigration2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312061625556_WishListMigration3.resx">
       <DependentUpon>202312061625556_WishListMigration3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312061638060_WishListMigration4.resx">
-      <DependentUpon>202312061638060_WishListMigration4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312061647366_NewManyToManyTable.resx">
       <DependentUpon>202312061647366_NewManyToManyTable.cs</DependentUpon>
@@ -448,20 +417,8 @@
     <EmbeddedResource Include="Migrations\202312082039340_regionData.resx">
       <DependentUpon>202312082039340_regionData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312082041576_newData2.resx">
-      <DependentUpon>202312082041576_newData2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312082052263_regionDataNew.resx">
       <DependentUpon>202312082052263_regionDataNew.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312082054037_regionNewData2.resx">
-      <DependentUpon>202312082054037_regionNewData2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312082056292_newAddressAndRegionData.resx">
-      <DependentUpon>202312082056292_newAddressAndRegionData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312182252223_testMigration1.resx">
-      <DependentUpon>202312182252223_testMigration1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

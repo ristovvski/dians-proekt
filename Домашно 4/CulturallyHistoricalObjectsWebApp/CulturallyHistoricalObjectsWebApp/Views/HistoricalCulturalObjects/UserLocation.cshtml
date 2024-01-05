@@ -9,28 +9,9 @@
 <head>
     <title>UserLocation</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/GeoLocation.js"></script>
     <script>
-        $(document).ready(function () {
-            // Get user's location
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var latitude = position.coords.latitude;
-                    var longitude = position.coords.longitude;
-
-                    // Update the form fields
-                    $('#userLatitude').val(latitude);
-                    $('#userLongitude').val(longitude);
-
-                    // Submit the form automatically
-                    $('form').submit();
-
-                    $('#loader').hide();
-
-                });
-            } else {
-                alert('Geolocation is not supported by this browser.');
-            }
-        });
+        geoLocation();
     </script>
 </head>
 <body>

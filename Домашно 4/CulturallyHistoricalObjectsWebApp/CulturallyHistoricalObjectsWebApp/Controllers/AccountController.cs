@@ -65,6 +65,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             return View();
         }
 
+        //to be explained
         public ActionResult AddUserToRole()
         {
             AddUserToRoleModel model = new AddUserToRoleModel();
@@ -72,47 +73,40 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             return View(model);
         }
 
+
         [HttpPost]
         public ActionResult AddToFavorite(int id)
         {
             var currentUser = User.Identity.GetUserId();
 
-            if (currentUser != null)
+            if (currentUser == null)
             {
-                ApplicationUser user = db.Users.Find(currentUser);
-
-                if (user != null)
-                {
-                    HistoricalCulturalObjects placeToAdd = db.culturalObjects.Find(id);
-
-                    if (placeToAdd != null)
-                    {
-                        if (!user.FavoritePlaces.Contains(placeToAdd))
-                        {
-                            user.FavoritePlaces.Add(placeToAdd);
-                            db.SaveChanges();
-
-                            return Json(new { success = true, message = "Place added to favorites!" });
-                        }
-                        else
-                        {
-                            return Json(new { success = false, message = "Place is already in favorites!" });
-                        }
-                    }
-                    else
-                    {
-                        return Json(new { success = false, message = "Place not found!" });
-                    }
-                }
-                else
-                {
-                    return Json(new { success = false, message = "User not found!" });
-                }
+                throw new HttpException(400, "No user logged in!");
             }
-            else
+
+            ApplicationUser user = db.Users.Find(currentUser);
+
+            if (user == null)
             {
-                return Json(new { success = false, message = "No user logged in!" });
+                throw new HttpException(404, "User not found!");
             }
+
+            HistoricalCulturalObjects placeToAdd = db.culturalObjects.Find(id);
+
+            if (placeToAdd == null)
+            {
+                throw new HttpException(404, "Place not found!");
+            }
+
+            if (user.FavoritePlaces.Contains(placeToAdd))
+            {
+                throw new HttpException(400, "Place is already in favorites!");
+            }
+
+            user.FavoritePlaces.Add(placeToAdd);
+            db.SaveChanges();
+
+            return Json(new { success = true, message = "Place added to favorites!" });
         }
 
         [HttpPost]
@@ -120,41 +114,34 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         {
             var currentUser = User.Identity.GetUserId();
 
-            if (currentUser != null)
+            if (currentUser == null)
             {
-                ApplicationUser user = db.Users.Find(currentUser);
-                if (user != null)
-                {
-                    HistoricalCulturalObjects placeToRemove = db.culturalObjects.Find(id);
-
-                    if (placeToRemove != null)
-                    {
-                        if (user.FavoritePlaces.Contains(placeToRemove))
-                        {
-                            user.FavoritePlaces.Remove(placeToRemove);
-                            db.SaveChanges();
-
-                            return Json(new { success = true, message = "Place is removed!" });
-                        }
-                        else
-                        {
-                            return Json(new { success = false, message = "Place is not in favorites!" });
-                        }
-                    }
-                    else
-                    {
-                        return Json(new { success = false, message = "Place not found!" });
-                    }
-                }
-                else
-                {
-                    return Json(new { success = false, message = "User not found!" });
-                }
+                throw new HttpException(400, "No user logged in!");
             }
-            else
+
+            ApplicationUser user = db.Users.Find(currentUser);
+
+            if (user == null)
             {
-                return Json(new { success = false, message = "No user logged in!" });
+                throw new HttpException(404, "User not found!");
             }
+
+            HistoricalCulturalObjects placeToRemove = db.culturalObjects.Find(id);
+
+            if (placeToRemove == null)
+            {
+                throw new HttpException(404, "Place not found!");
+            }
+
+            if (!user.FavoritePlaces.Contains(placeToRemove))
+            {
+                throw new HttpException(400, "Place is not in favorites!");
+            }
+
+            user.FavoritePlaces.Remove(placeToRemove);
+            db.SaveChanges();
+
+            return Json(new { success = true, message = "Place is removed!" });
         }
 
 
@@ -171,7 +158,6 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             return RedirectToAction("Index", "HistoricalCulturalObjects");
         }
 
-        //
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]

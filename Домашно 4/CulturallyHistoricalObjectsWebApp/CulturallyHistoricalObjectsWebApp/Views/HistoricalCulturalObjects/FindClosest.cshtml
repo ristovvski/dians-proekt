@@ -21,48 +21,51 @@
         </thead>
         <tbody>
             <tr>
-                <td>@Model.closestDistance.HistoricalCulturalObjects.type.type</td>
-                <td>
-                    @Html.ActionLink(Model.closestDistance.HistoricalCulturalObjects.name, "Details", new { id = Model.closestDistance.HistoricalCulturalObjects.id }, new { @class = "details_style" })
-                </td>
-                <td>@Model.closestDistance.HistoricalCulturalObjects.region.name</td>
-                <td>@Model.closestDistance.distance km</td>
-                <td class="button-column">
-                    <div class="buttons-row">
-                        @{
-                            bool isInFavorite = Model.favoritePlacesIds.Contains(Model.closestDistance.HistoricalCulturalObjects.id);
-                        }
-                        @if (!isInFavorite)
-                        {
-                            using (Html.BeginForm("AddToFavorite", "Account", FormMethod.Post, new { @class = "favorite-form" }))
-                            {
-                                @Html.Hidden("id", Model.closestDistance.HistoricalCulturalObjects.id) <!-- Use "id" as the parameter name -->
-                                <button type="submit" class="yellow-button favorite-button">Favorite</button>
+                @if (Model != null)
+                 {
+                    <td>@Model.historicalCulturalObject.type.type</td>
+                    <td>
+                        @Html.ActionLink(Model.historicalCulturalObject.name, "Details", new { id = Model.historicalCulturalObject.id }, new { @class = "details_style" })
+                    </td>
+                    <td>@Model.historicalCulturalObject.region.name</td>
+                    <td>@Model.distance km</td>
+                    <td class="button-column">
+                        <div class="buttons-row">
+                            @{
+                                bool isInFavorite = Model.favoritePlacesIds.Contains(Model.historicalCulturalObject.id);
                             }
-                        }
-                        else
-                        {
-                            using (Html.BeginForm("RemoveFromFavorites", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                            @if (!isInFavorite)
                             {
-                                @Html.Hidden("id", Model.closestDistance.HistoricalCulturalObjects.id) <!-- Use "id" as the parameter name -->
-                                <button type="submit" class="red-button favorite-button">Remove</button>
+                                using (Html.BeginForm("AddToFavorite", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                                {
+                                    @Html.Hidden("id", Model.historicalCulturalObject.id) <!-- Use "id" as the parameter name -->
+                                    <button type="submit" class="yellow-button favorite-button">Favorite</button>
+                                }
                             }
-                        }
-
-                        @if (User.IsInRole("Administrator"))
-                        {
-                            using (Html.BeginForm("Edit", "HistoricalCulturalObjects", new { id = Model.closestDistance.HistoricalCulturalObjects.id }, FormMethod.Get, new { @class = "form-inline" }))
+                            else
                             {
-                                <button type="submit" class="yellow-button">Edit</button>
+                                using (Html.BeginForm("RemoveFromFavorites", "Account", FormMethod.Post, new { @class = "favorite-form" }))
+                                {
+                                    @Html.Hidden("id", Model.historicalCulturalObject.id) <!-- Use "id" as the parameter name -->
+                                    <button type="submit" class="red-button favorite-button">Remove</button>
+                                }
                             }
 
-                            using (Html.BeginForm("Delete", "HistoricalCulturalObjects", new { id = Model.closestDistance.HistoricalCulturalObjects.id }, FormMethod.Get, new { @class = "form-inline" }))
+                            @if (User.IsInRole("Administrator"))
                             {
-                                <button type="submit" class="red-button">Delete</button>
+                                using (Html.BeginForm("Edit", "HistoricalCulturalObjects", new { id = Model.historicalCulturalObject.id }, FormMethod.Get, new { @class = "form-inline" }))
+                                {
+                                    <button type="submit" class="yellow-button">Edit</button>
+                                }
+
+                                using (Html.BeginForm("Delete", "HistoricalCulturalObjects", new { id = Model.historicalCulturalObject.id }, FormMethod.Get, new { @class = "form-inline" }))
+                                {
+                                    <button type="submit" class="red-button">Delete</button>
+                                }
                             }
-                        }
-                    </div>
-                </td>
+                        </div>
+                    </td>
+                 }
             </tr>
         </tbody>
     </table>

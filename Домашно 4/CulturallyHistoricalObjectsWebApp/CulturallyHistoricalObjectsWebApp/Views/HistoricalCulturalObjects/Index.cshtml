@@ -12,7 +12,7 @@
 
     <style>
     </style>
-
+    <script src="~/Scripts/GeoLocation.js"></script>
     <script>
         $(document).ready(function () {
             $('#findAllBtn').click(function () {
@@ -22,23 +22,9 @@
             $('#findClosestBtn').click(function () {
                 $('#loader').show();
                 $('form').attr('action', "/HistoricalCulturalObjects/FindClosest")
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function (position) {
-                        var userLatitude = position.coords.latitude;
-                        var userLongitude = position.coords.longitude;
 
-                        $('#userLatitude').val(userLatitude);
-                        $('#userLongitude').val(userLongitude);
+                geoLocation();
 
-                        // Set the action type
-                        $('form').submit();
-
-                        $('#loader').hide();
-
-                    });
-                } else {
-                    alert('Geolocation is not supported by this browser.');
-                }
                 return false; // Prevent the default form submission
             });
         });
@@ -53,7 +39,7 @@
     <div class="loader" id="loader"></div>
     <div>
         <div>
-            @using (Html.BeginForm("Filter", "HistoricalCulturalObjects", FormMethod.Post, new { @class = "form-style" }))
+            @using (Html.BeginForm("FindAll", "HistoricalCulturalObjects", FormMethod.Post, new { @class = "form-style" }))
             {
 
                 @Html.LabelFor(model => model.name, "Name:", new { @class = "label-style" })

@@ -10,22 +10,32 @@ namespace CulturallyHistoricalObjectsWebApp.Service
     public class DistanceService
     {
 
-
+  
         static double toRadians(double angleIn10thofaDegree)
         {
             return angleIn10thofaDegree * Math.PI / 180;
         }
 
-        public ClosestDTO distance(FilterDTO model, List<HistoricalCulturalObjects> objects)
+        public ClosestFavoriteDTO distance(FilterDTO model, List<HistoricalCulturalObjects> objects)
         {
             objects = objects.OrderBy(o => o.id).ToList();
+
+            //In objects we have the historical cultural objects that remained after filtering, if there are none, we return null.
+            if (objects.Count <=0)
+            {
+                return null;
+            }
+
+
+            //the rest of the code is for calculating the distance of an objet based of it's location and the user's location
+            //(longitude and latitude)
 
             HistoricalCulturalObjects closest = objects.ElementAt(0);
 
             bool flag = true;
             double minDistance = 9999.99;
 
-            ClosestDTO temp = new ClosestDTO();
+            ClosestFavoriteDTO temp = new ClosestFavoriteDTO();
 
             foreach (HistoricalCulturalObjects obj in objects)
             {
@@ -49,7 +59,7 @@ namespace CulturallyHistoricalObjectsWebApp.Service
 
                 if (flag)
                 {
-                    temp.HistoricalCulturalObjects = obj;
+                    temp.historicalCulturalObject = obj;
                     temp.distance = distance;
                     flag = false;
                 }
@@ -58,14 +68,11 @@ namespace CulturallyHistoricalObjectsWebApp.Service
 
                     if (distance < minDistance)
                     {
-                        temp.HistoricalCulturalObjects = obj;
+                        temp.historicalCulturalObject = obj;
                         temp.distance = distance;
                         minDistance = distance;
                     }
                 }
-
-                Console.WriteLine(obj.name + " " + distance + " \n");
-
             }
 
             return temp;

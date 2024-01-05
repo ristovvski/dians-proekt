@@ -8,10 +8,9 @@ namespace CulturallyHistoricalObjectsWebApp.Service.Filters
     {
         public List<HistoricalCulturalObjects> execute(FilterDTO input, List<HistoricalCulturalObjects> objects)
         {
-            if (input.ObjectTypesModel != null)
-            {
-                objects = objects.Where(o => o.type != null && o.type.Equals(input.ObjectTypesModel)).ToList();
-            }
+            
+            //filter the historical cultural objects that are from a specific type stored in input.ObjectTypesModel
+            objects = objects.Where(o => o.type != null && o.type.Equals(input.ObjectTypesModel)).ToList();
 
             return objects;
         }

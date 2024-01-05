@@ -8,11 +8,7 @@ namespace CulturallyHistoricalObjectsWebApp.Service.Filters
     {
         public List<HistoricalCulturalObjects> execute(FilterDTO input, List<HistoricalCulturalObjects> objects)
         {
-            if (input.name != null)
-            {
-                objects = objects.Where(o => o.name.ToLower().Contains(input.name.ToLower())).ToList();
-            }
-
+            objects = objects.Where(o => o.name.ToLower().Contains(input.name.ToLower())).ToList();
             return objects;
         }
     }

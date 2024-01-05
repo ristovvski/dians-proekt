@@ -30,33 +30,31 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             return View(filterDTO);
         }
 
-
-        [HttpPost]
-        public ActionResult Filter(FilterDTO model)
-        {
-            if (Request.Form["actionType"].Equals("FindAll"))
-            {
-                return RedirectToAction("FindAll", model);
-            }
-            return RedirectToAction("FindClosest", model);
-        }
-
         public ActionResult FindAll(FilterDTO model)
         {
-            // Fetch the favorite IDs for the current user outside the loop
+            //take the Id of the user and find that user.
             var userId = User.Identity.GetUserId();
             var currentUser = db.Users.Find(userId);
 
-            List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
-            List<HistoricalCulturalObjects> hist = filterService.filterObjects(model);
 
+            //take all the FavoritePlaces for the current user.
+            List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
+            //Filter the historical cultural objects.
+            List<HistoricalCulturalObjects> filteredHistoricalObjects = filterService.filterObjects(model);
+
+            //Create an instance of the DataTransportObject and store the favorite places for the user and the other historical cultural
+            //objects.
             HistoricalCOUserDTO historicalCOUserDTO = new HistoricalCOUserDTO();
 
-            historicalCOUserDTO.HistoricalCulturalObjects = hist;
+            historicalCOUserDTO.HistoricalCulturalObjects = filteredHistoricalObjects;
             historicalCOUserDTO.favoritePlacesIds = currentUserFavoriteIds;
+
+            //return a View with this Model, so later in the view when looping through the historical objects, if the object is in
+            //the user's favorite list, it would be marked as already there (the button would be 'Remove', instead of 'Favorite'
 
             return View(historicalCOUserDTO);
         }
+
 
         public ActionResult FindClosest(FilterDTO model)
         {
@@ -64,26 +62,35 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
 
             if (model.userLongitude == 0 || model.userLatitude == 0)
             {
+                //Read the explanation above "UserLocation" to understand the Redirecting.
                 return RedirectToAction("UserLocation");
             }
             else
             {
+                //distanceService returns a ClosestFavoriteDTO object in which there is a stored value for the attributes
+                //distance and historicalCulturalObject
+                ClosestFavoriteDTO closestFavoriteDTO = distanceService.distance(model, objects);
 
-                ClosestFavoriteDTO closestFavoriteDTO = new ClosestFavoriteDTO();
-
-                closestFavoriteDTO.closestDistance = distanceService.distance(model, objects);
-
+                
                 var userId = User.Identity.GetUserId();
                 var currentUser = db.Users.Find(userId);
 
                 List<int> currentUserFavoriteIds = currentUser.FavoritePlaces.Select(f => f.id).ToList();
 
-                closestFavoriteDTO.favoritePlacesIds = currentUserFavoriteIds;
+
+                //We check if closestFavoriteDTO is not null, because for example we might filter and search for monument in
+                //a region where there aren't any monuments, so because of that the distanceService.distance will return null
+                if (closestFavoriteDTO != null)
+                {
+                    closestFavoriteDTO.favoritePlacesIds = currentUserFavoriteIds;
+                }
 
                 return View(closestFavoriteDTO);
             }
         }
 
+
+        //Here we take all the Favorite places for the User and display it in /HistoricalCulturalObjects/FavoritePlaces page.
         public ActionResult FavoritePlaces()
         {
             var userId = User.Identity.GetUserId();
@@ -94,6 +101,10 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             return View(currentUserFavoriteIds.Select(c => objects.Where(o=> o.id==c).First()).ToList());
         }
 
+        //UserLocation is like a "middle page" that shows up only in a situations where we don't have the user's longitude and latitude, but
+        //the user wants to use the FindClosest functionality of the application.
+        //In that case, the user is navigated to a page UserLocation which is specific only for taking the user's location and redirecting it
+        //to FindClosest after.
         public ActionResult UserLocation()
         {
             FilterDTO model = new FilterDTO();
@@ -122,7 +133,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         // GET: HistoricalCulturalObjects/Create
         public ActionResult Create()
         {
-            EditDTO edit = new EditDTO();
+            EditAndCreateDTO edit = new EditAndCreateDTO();
             edit.regions = db.regions.ToList();
             edit.objectTypes = db.objectTypes.ToList();
             edit.historicalCultralObject = new HistoricalCulturalObjects();
@@ -135,7 +146,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         [HttpPost]
         [Authorize(Roles = "Administrator")]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(EditDTO create)
+        public ActionResult Create(EditAndCreateDTO create)
         {
             HistoricalCulturalObjects historicalCulturalObjects = create.historicalCultralObject;
             if (ModelState.IsValid)
@@ -158,7 +169,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EditDTO edit = new EditDTO();
+            EditAndCreateDTO edit = new EditAndCreateDTO();
             HistoricalCulturalObjects historicalCulturalObjects = db.culturalObjects.Find(id);
             if (historicalCulturalObjects == null)
             {
@@ -179,7 +190,7 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Administrator")]
-        public ActionResult Edit(EditDTO edit)
+        public ActionResult Edit(EditAndCreateDTO edit)
         {
             if (ModelState.IsValid)
             {

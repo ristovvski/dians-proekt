@@ -24,14 +24,9 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
-            context.Database.ExecuteSqlCommand("DELETE FROM HistoricalCulturalObjects");
-            context.Database.ExecuteSqlCommand("DELETE FROM ObjectTypesModels");
-            context.Database.ExecuteSqlCommand("DELETE FROM UserFavoritePlaces");
-            context.Database.ExecuteSqlCommand("DELETE FROM Regions");
-
             string relativePath = @"Content\json_data\historical_cultural_objects.json";
             string fullPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\", relativePath));
-            AppDbSeeding appSeeding = new AppDbSeeding();
+            DataReading appSeeding = new DataReading();
             List<HCObjectsDTO> objectsDTO = appSeeding.parseJson(fullPath);
             List<String> typeStringified = appSeeding.getStringTypes(objectsDTO);
             List<string> regionStringified = appSeeding.getStringRegion(objectsDTO);
@@ -49,7 +44,7 @@
             }
 
             context.SaveChanges();
-
+            // Populate Regions table
             foreach (string region in uniqueRegions)
             {
                 Region regionObject = new Region(region);
@@ -58,7 +53,7 @@
 
             context.SaveChanges();
 
-            int i = 0;
+            //Populate HistoricalCulturalObjects table
             foreach (var obj in objectsDTO)
             {
                 HistoricalCulturalObjects tmp = new HistoricalCulturalObjects();
@@ -84,7 +79,6 @@
                 }
 
                 context.culturalObjects.AddOrUpdate(x => x.name, tmp);
-                i++;
             }
             context.SaveChanges();
         }
