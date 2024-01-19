@@ -48,5 +48,13 @@ namespace CulturallyHistoricalObjectsWebApp.Service
             }
             return pipe.runFilters(filterDTO, objects);
         }
+
+        public FilterDTO createFilter()
+        {
+            FilterDTO filterDTO = new FilterDTO();
+            filterDTO.types = db.objectTypes.ToList();
+            filterDTO.regions = db.regions.ToList();
+            return filterDTO;
+        }
     }
 }

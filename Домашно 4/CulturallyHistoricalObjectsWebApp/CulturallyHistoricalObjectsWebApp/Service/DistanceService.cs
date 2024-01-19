@@ -25,8 +25,6 @@ namespace CulturallyHistoricalObjectsWebApp.Service
             {
                 return null;
             }
-
-
             //the rest of the code is for calculating the distance of an objet based of it's location and the user's location
             //(longitude and latitude)
 

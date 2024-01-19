@@ -6,10 +6,13 @@
 <head>
     <link rel="stylesheet" href="../../Content/style/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="~/Scripts/favoriteAjax.js"></script>
+    <script src="~/Scripts/Custom Scripts/DataTablesAndDelete.js"></script>
+    <script>
+        dataTablesAjax();
+    </script>
 </head>
 <body>
-    <table>
+    <table id="places_table">
         <thead>
             <tr>
                 <th>Name</th>
@@ -45,10 +48,7 @@
                                     <button type="submit" class="yellow-button">Edit</button>
                                 }
 
-                                using (Html.BeginForm("Delete", "HistoricalCulturalObjects", new { id = obj.id }, FormMethod.Get, new { @class = "form-inline" }))
-                                {
-                                    <button type="submit" class="red-button">Delete</button>
-                                }
+                                <button data-place="@obj.id" type="submit" class="red-button js_delete">Delete</button>
                             }
                         </div>
                     </td>
