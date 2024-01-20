@@ -4,13 +4,16 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Numerics;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
 using CulturallyHistoricalObjectsWebApp.Service;
 using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
+using Newtonsoft.Json;
 
 namespace CulturallyHistoricalObjectsWebApp.Controllers
 {
@@ -62,10 +65,55 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             }
             else
             {
-                List<HistoricalCulturalObjects> objects = filterService.filterObjects(model);
-                //distanceService returns a ClosestFavoriteDTO object in which there is a stored value for the attributes
-                //distance and historicalCulturalObject
-                ClosestFavoriteDTO closestFavoriteDTO = distanceService.distance(model, objects);
+                DistanceRequestDTO distanceRequestDTO = new DistanceRequestDTO();
+
+                distanceRequestDTO.FilteredObjects = filterService.filterObjects(model);
+                distanceRequestDTO.UserLatitude = model.userLatitude;
+                distanceRequestDTO.UserLongitude = model.userLongitude;
+
+                ClosestFavoriteDTO closestFavoriteDTO = null;
+
+                // Use HttpClient to send a POST request to the Distance microservice
+                using (HttpClient client = new HttpClient())
+                {
+                    // Replace "YourDistanceMicroserviceBaseUri" with the actual base URI of your Distance microservice
+                    string distanceMicroserviceUri = "https://localhost:44331/api/Distance";
+
+                    try
+                    {
+                        JsonSerializerSettings settings = new JsonSerializerSettings
+                        {
+                            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                        };
+
+                        string jsonContent = JsonConvert.SerializeObject(distanceRequestDTO, settings);
+                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                        HttpResponseMessage response = client.PostAsync(distanceMicroserviceUri, content).Result;
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            // Read the JSON response content
+                            string jsonResponse = response.Content.ReadAsStringAsync().Result;
+
+                            // Deserialize the JSON response into an object
+                            closestFavoriteDTO = JsonConvert.DeserializeObject<ClosestFavoriteDTO>(jsonResponse);
+                        }
+                        else
+                        {
+                            // Handle the case where the API request was not successful
+                            // You might want to log the error or take appropriate action
+                            // For simplicity, let's set closestFavoriteDTO to null
+                            closestFavoriteDTO = null;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle exceptions, log the error, or take appropriate action
+                        closestFavoriteDTO = null;
+                    }
+                }
+
 
                 var userId = User.Identity.GetUserId();
 

@@ -257,6 +257,7 @@
     <Compile Include="Models\DataTransportObjects\FilterDTO.cs" />
     <Compile Include="Models\DataTransportObjects\HCObjectsDTO.cs" />
     <Compile Include="Models\DataTransportObjects\HistoricalCOUserDTO.cs" />
+    <Compile Include="Models\DistanceRequestDTO.cs" />
     <Compile Include="Models\HistoricalCulturalObjects.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
