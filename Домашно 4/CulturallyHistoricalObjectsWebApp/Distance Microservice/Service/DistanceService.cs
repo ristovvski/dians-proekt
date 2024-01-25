@@ -27,9 +27,7 @@ namespace Distance_Microservice.Service
             //the rest of the code is for calculating the distance of an objet based of it's location and the user's location
             //(longitude and latitude)
 
-            HistoricalCulturalObjects closest = objects.ElementAt(0);
 
-            bool flag = true;
             double minDistance = 9999.99;
 
             ClosestFavoriteDTO temp = new ClosestFavoriteDTO();
@@ -54,21 +52,11 @@ namespace Distance_Microservice.Service
 
                 distance = Math.Round(distance, 2);
 
-                if (flag)
+                if (distance < minDistance)
                 {
                     temp.historicalCulturalObject = obj;
                     temp.distance = distance;
-                    flag = false;
-                }
-                else
-                {
-
-                    if (distance < minDistance)
-                    {
-                        temp.historicalCulturalObject = obj;
-                        temp.distance = distance;
-                        minDistance = distance;
-                    }
+                    minDistance = distance;
                 }
             }
 

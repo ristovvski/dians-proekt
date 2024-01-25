@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Numerics;
 using System.Text;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
 using CulturallyHistoricalObjectsWebApp.Service;
@@ -20,8 +21,6 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
     public class HistoricalCulturalObjectsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-        private FilterService filterService = new FilterService();
-        private DistanceService distanceService = new DistanceService();
         private UserService userService = new UserService();
         private HistoricalObjectsService historicalObjectService = new HistoricalObjectsService();
         private RegionsService regionService = new RegionsService();
@@ -30,7 +29,10 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         // GET: HistoricalCulturalObjects
         public ActionResult Index()
         {
-            return View(filterService.createFilter());
+            FilterDTO filterDTO = new FilterDTO();
+            filterDTO.types = db.objectTypes.ToList();
+            filterDTO.regions = db.regions.ToList();
+            return View(filterDTO);
         }
 
         public ActionResult FindAll(FilterDTO model)
@@ -40,14 +42,13 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
 
             //take all the FavoritePlaces for the current user.
             List<int> currentUserFavoriteIds = userService.getUserFavorites(userId);
-            //Filter the historical cultural objects.
-            List<HistoricalCulturalObjects> filteredHistoricalObjects = filterService.filterObjects(model);
+            
 
             //Create an instance of the DataTransportObject and store the favorite places for the user and the other historical cultural
             //objects.
             HistoricalCOUserDTO historicalCOUserDTO = new HistoricalCOUserDTO();
 
-            historicalCOUserDTO.HistoricalCulturalObjects = filteredHistoricalObjects;
+            historicalCOUserDTO.HistoricalCulturalObjects = historicalObjectService.GetFilteredObjectsFromMicroservice(model);
             historicalCOUserDTO.favoritePlacesIds = currentUserFavoriteIds;
 
             //return a View with this Model, so later in the view when looping through the historical objects, if the object is in
@@ -65,55 +66,15 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             }
             else
             {
+                
+
                 DistanceRequestDTO distanceRequestDTO = new DistanceRequestDTO();
 
-                distanceRequestDTO.FilteredObjects = filterService.filterObjects(model);
+                distanceRequestDTO.FilteredObjects = historicalObjectService.GetFilteredObjectsFromMicroservice(model);
                 distanceRequestDTO.UserLatitude = model.userLatitude;
                 distanceRequestDTO.UserLongitude = model.userLongitude;
 
-                ClosestFavoriteDTO closestFavoriteDTO = null;
-
-                // Use HttpClient to send a POST request to the Distance microservice
-                using (HttpClient client = new HttpClient())
-                {
-                    // Replace "YourDistanceMicroserviceBaseUri" with the actual base URI of your Distance microservice
-                    string distanceMicroserviceUri = "https://localhost:44331/api/Distance";
-
-                    try
-                    {
-                        JsonSerializerSettings settings = new JsonSerializerSettings
-                        {
-                            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                        };
-
-                        string jsonContent = JsonConvert.SerializeObject(distanceRequestDTO, settings);
-                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-                        HttpResponseMessage response = client.PostAsync(distanceMicroserviceUri, content).Result;
-
-                        if (response.IsSuccessStatusCode)
-                        {
-                            // Read the JSON response content
-                            string jsonResponse = response.Content.ReadAsStringAsync().Result;
-
-                            // Deserialize the JSON response into an object
-                            closestFavoriteDTO = JsonConvert.DeserializeObject<ClosestFavoriteDTO>(jsonResponse);
-                        }
-                        else
-                        {
-                            // Handle the case where the API request was not successful
-                            // You might want to log the error or take appropriate action
-                            // For simplicity, let's set closestFavoriteDTO to null
-                            closestFavoriteDTO = null;
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        // Handle exceptions, log the error, or take appropriate action
-                        closestFavoriteDTO = null;
-                    }
-                }
-
+                ClosestFavoriteDTO closestFavoriteDTO = historicalObjectService.GetClosestFavoriteFromMicroservice(distanceRequestDTO);
 
                 var userId = User.Identity.GetUserId();
 

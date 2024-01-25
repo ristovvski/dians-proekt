@@ -14,18 +14,6 @@ namespace Distance_Microservice.Controllers
 
         public DistanceService distanceService = new DistanceService();
 
-        // GET: api/Distance
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/Distance/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST: api/Distance
         public IHttpActionResult Post([FromBody] DistanceRequestDTO toCalculate)
         {
@@ -58,16 +46,6 @@ namespace Distance_Microservice.Controllers
 
             // Return the JSON response
             return Ok(responseObject);
-        }
-
-        // PUT: api/Distance/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Distance/5
-        public void Delete(int id)
-        {
         }
     }
 }

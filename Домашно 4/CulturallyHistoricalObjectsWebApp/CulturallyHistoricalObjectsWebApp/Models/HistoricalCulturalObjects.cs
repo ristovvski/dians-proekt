@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -31,6 +32,7 @@ namespace CulturallyHistoricalObjectsWebApp.Models
         public double lat {  get; set; }
         // Navigation property for the ApplicationUser
 
+        [JsonIgnore]
         //List of Users that the object is favorite to.
         public virtual List<ApplicationUser> FavoriteForUsers { get; set; }
     }

@@ -56,11 +56,12 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             }
         }
 
-        //
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+            string currentDirectory = Environment.CurrentDirectory;
+            Console.WriteLine("Current Directory: " + currentDirectory);
             if (returnUrl == null) returnUrl = "/";
             ViewBag.ReturnUrl = returnUrl;
             return View();
