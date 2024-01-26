@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Hosting;
 using CulturallyHistoricalObjectsWebApp.Data;
+using CulturallyHistoricalObjectsWebApp.Migrations;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 

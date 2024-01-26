@@ -3,8 +3,12 @@
     "",
     "\\Домашно 4",
     "\\Домашно 4\\CulturallyHistoricalObjectsWebApp",
-    "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp"
+    "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\AccountProject",
+    "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\AccountProject\\Controllers",
+    "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp",
+    "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Views",
+    "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Views\\HistoricalCulturalObjects"
   ],
-  "SelectedNode": "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.sln",
+  "SelectedNode": "\\Домашно 4\\CulturallyHistoricalObjectsWebApp\\AccountProject\\Controllers\\AccountController.cs",
   "PreviewInSolutionExplorer": false
 }

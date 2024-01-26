@@ -1,7 +1,11 @@
 ﻿using CulturallyHistoricalObjectsWebApp.Models;
+using Microsoft.Ajax.Utilities;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Web;
 
 namespace CulturallyHistoricalObjectsWebApp.Service
@@ -71,6 +75,76 @@ namespace CulturallyHistoricalObjectsWebApp.Service
         public List<HistoricalCulturalObjects> listAll()
         {
             return db.culturalObjects.Include("type").Include("region").ToList();
+        }
+
+        public List<HistoricalCulturalObjects> GetFilteredObjectsFromMicroservice(FilterDTO model)
+        {
+            string filterMicroserviceUri = "https://localhost:44364/api/Filter";
+            List<HistoricalCulturalObjects> filteredObjects = null;
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    JsonSerializerSettings settings = new JsonSerializerSettings
+                    {
+                        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                    };
+
+                    string jsonContent = JsonConvert.SerializeObject(model, settings);
+                    var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = client.PostAsync(filterMicroserviceUri, content).Result;
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string jsonResponse = response.Content.ReadAsStringAsync().Result;
+                        filteredObjects = JsonConvert.DeserializeObject<List<HistoricalCulturalObjects>>(jsonResponse);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions, log the error, or take appropriate action
+                filteredObjects = null;
+            }
+
+            return filteredObjects;
+        }
+
+        public ClosestFavoriteDTO GetClosestFavoriteFromMicroservice(DistanceRequestDTO distanceRequestDTO)
+        {
+            string distanceMicroserviceUri = "https://localhost:44331/api/Distance";
+            ClosestFavoriteDTO closestFavoriteDTO = null;
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    JsonSerializerSettings settings = new JsonSerializerSettings
+                    {
+                        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                    };
+
+                    string jsonContent = JsonConvert.SerializeObject(distanceRequestDTO, settings);
+                    var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = client.PostAsync(distanceMicroserviceUri, content).Result;
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string jsonResponse = response.Content.ReadAsStringAsync().Result;
+                        closestFavoriteDTO = JsonConvert.DeserializeObject<ClosestFavoriteDTO>(jsonResponse);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions, log the error, or take appropriate action
+                closestFavoriteDTO = null;
+            }
+
+            return closestFavoriteDTO;
         }
     }
 }

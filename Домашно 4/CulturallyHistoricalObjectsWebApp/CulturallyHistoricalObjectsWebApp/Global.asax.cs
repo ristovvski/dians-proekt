@@ -18,6 +18,7 @@ namespace CulturallyHistoricalObjectsWebApp
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AppDomain.CurrentDomain.SetData("DataDirectory", @"C:\Users\vanes\source\repos\dians-proekt4\Домашно 4\CulturallyHistoricalObjectsWebApp\App_Data");
         }
     }
 }

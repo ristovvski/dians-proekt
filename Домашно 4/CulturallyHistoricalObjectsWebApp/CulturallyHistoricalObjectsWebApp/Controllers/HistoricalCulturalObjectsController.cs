@@ -4,21 +4,23 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Numerics;
+using System.Text;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 using CulturallyHistoricalObjectsWebApp.Models;
 using CulturallyHistoricalObjectsWebApp.Service;
 using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
+using Newtonsoft.Json;
 
 namespace CulturallyHistoricalObjectsWebApp.Controllers
 {
     public class HistoricalCulturalObjectsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-        private FilterService filterService = new FilterService();
-        private DistanceService distanceService = new DistanceService();
         private UserService userService = new UserService();
         private HistoricalObjectsService historicalObjectService = new HistoricalObjectsService();
         private RegionsService regionService = new RegionsService();
@@ -27,7 +29,10 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
         // GET: HistoricalCulturalObjects
         public ActionResult Index()
         {
-            return View(filterService.createFilter());
+            FilterDTO filterDTO = new FilterDTO();
+            filterDTO.types = db.objectTypes.ToList();
+            filterDTO.regions = db.regions.ToList();
+            return View(filterDTO);
         }
 
         public ActionResult FindAll(FilterDTO model)
@@ -37,14 +42,13 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
 
             //take all the FavoritePlaces for the current user.
             List<int> currentUserFavoriteIds = userService.getUserFavorites(userId);
-            //Filter the historical cultural objects.
-            List<HistoricalCulturalObjects> filteredHistoricalObjects = filterService.filterObjects(model);
+            
 
             //Create an instance of the DataTransportObject and store the favorite places for the user and the other historical cultural
             //objects.
             HistoricalCOUserDTO historicalCOUserDTO = new HistoricalCOUserDTO();
 
-            historicalCOUserDTO.HistoricalCulturalObjects = filteredHistoricalObjects;
+            historicalCOUserDTO.HistoricalCulturalObjects = historicalObjectService.GetFilteredObjectsFromMicroservice(model);
             historicalCOUserDTO.favoritePlacesIds = currentUserFavoriteIds;
 
             //return a View with this Model, so later in the view when looping through the historical objects, if the object is in
@@ -62,10 +66,15 @@ namespace CulturallyHistoricalObjectsWebApp.Controllers
             }
             else
             {
-                List<HistoricalCulturalObjects> objects = filterService.filterObjects(model);
-                //distanceService returns a ClosestFavoriteDTO object in which there is a stored value for the attributes
-                //distance and historicalCulturalObject
-                ClosestFavoriteDTO closestFavoriteDTO = distanceService.distance(model, objects);
+                
+
+                DistanceRequestDTO distanceRequestDTO = new DistanceRequestDTO();
+
+                distanceRequestDTO.FilteredObjects = historicalObjectService.GetFilteredObjectsFromMicroservice(model);
+                distanceRequestDTO.UserLatitude = model.userLatitude;
+                distanceRequestDTO.UserLongitude = model.userLongitude;
+
+                ClosestFavoriteDTO closestFavoriteDTO = historicalObjectService.GetClosestFavoriteFromMicroservice(distanceRequestDTO);
 
                 var userId = User.Identity.GetUserId();
 
