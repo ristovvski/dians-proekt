@@ -26,5 +26,5 @@
 
 ## Видео објаснување за последната верзија на апликацијата:
 
-- [Линк до видеото](https://www.github.com/octokatherine)
+- [Линк до видеото](https://www.youtube.com/watch?v=lquJRafZ2-0)
 
