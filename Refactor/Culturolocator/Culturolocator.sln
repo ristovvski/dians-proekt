@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Culturolocator", "Culturolocator\Culturolocator.csproj", "{7161CD85-8D9C-4C87-B381-BC2E0432048E}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "culturolocator.presentation", "Culturolocator.Presentation\culturolocator.presentation.esproj", "{0D54C906-4A77-4A99-9E79-7B92551D6D60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7161CD85-8D9C-4C87-B381-BC2E0432048E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7161CD85-8D9C-4C87-B381-BC2E0432048E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7161CD85-8D9C-4C87-B381-BC2E0432048E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7161CD85-8D9C-4C87-B381-BC2E0432048E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D54C906-4A77-4A99-9E79-7B92551D6D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D54C906-4A77-4A99-9E79-7B92551D6D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D54C906-4A77-4A99-9E79-7B92551D6D60}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0D54C906-4A77-4A99-9E79-7B92551D6D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D54C906-4A77-4A99-9E79-7B92551D6D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D54C906-4A77-4A99-9E79-7B92551D6D60}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14D2DDBF-EF32-4B2D-879B-13DA6AF12061}
+	EndGlobalSection
+EndGlobal
