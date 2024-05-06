@@ -7661,11 +7661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Culturolocator.csproj",
+      "projectUniqueName": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Culturolocator.csproj",
       "projectName": "Culturolocator",
-      "projectPath": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Culturolocator.csproj",
+      "projectPath": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Culturolocator.csproj",
       "packagesPath": "C:\\Users\\vanes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\obj\\",
+      "outputPath": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vanes\\AppData\\Roaming\\NuGet\\NuGet.Config",

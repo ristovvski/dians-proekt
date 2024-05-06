@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Culturolocator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f618bd855bbd514176597a1d53b8113f94d3d776")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5807c8de0b2caf5546d9e64399915d2110838e48")]
 [assembly: System.Reflection.AssemblyProductAttribute("Culturolocator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Culturolocator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

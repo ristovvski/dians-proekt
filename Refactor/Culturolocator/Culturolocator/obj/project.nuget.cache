@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nqjFm/igxhg6eZoaf6mPMjLXkbS1TnWeVyN4SH/Od95SiPUIxwEYKS+6pKownL05ZrF7c0V8UUKcmKtLy0ruWw==",
+  "dgSpecHash": "BH+4HcGoHVAldhlkWfiyqmqY5qYYOyORV/VT+UuFMfO3E5yqmwvYF3QVxzn4UIpCXIhITdr6KRsAFSK9C/a3rQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Culturolocator.csproj",
+  "projectFilePath": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Culturolocator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vanes\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\vanes\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",

@@ -1,34 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\",
+  "WorkspaceRootPath": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator.presentation\\src\\axios\\axios.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|solutionrelative:culturolocator.presentation\\src\\axios\\axios.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\models\\dto\\logindto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\models\\dto\\logindto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|solutionrelative:culturolocator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\axios-config\\axios.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\axios-config\\axios.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator.presentation\\src\\components\\login\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|solutionrelative:culturolocator.presentation\\src\\components\\login\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\repository\\culturolocatorservice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\repository\\culturolocatorservice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator.presentation\\src\\repository\\apprepository.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|solutionrelative:culturolocator.presentation\\src\\repository\\apprepository.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\component\\weathers-list\\weather-list.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\component\\weathers-list\\weather-list.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\pages\\weathers\\weathers.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\pages\\weathers\\weathers.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\pages\\login\\login.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\pages\\login\\login.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\pages\\register\\register.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\pages\\register\\register.component.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|solutionrelative:culturolocator\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7161CD85-8D9C-4C87-B381-BC2E0432048E}|Culturolocator\\Culturolocator.csproj|solutionrelative:culturolocator\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|c:\\users\\vanes\\source\\dians-proekt\\refactor\\culturolocator\\culturolocator.presentation\\src\\components\\weather\\weather.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0D54C906-4A77-4A99-9E79-7B92551D6D60}|Culturolocator.Presentation\\culturolocator.presentation.esproj|solutionrelative:culturolocator.presentation\\src\\components\\weather\\weather.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|c:\\users\\vanes\\dians-proekt\\refactor\\culturolocator\\culturolocator.frontend\\src\\models\\dto\\registerdto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{F46E4EBE-26CB-4266-B9C4-02F602C849FE}|culturolocator.frontend\\culturolocator.frontend.esproj|solutionrelative:culturolocator.frontend\\src\\models\\dto\\registerdto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,93 +62,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.jsx",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Components\\Login\\Login.jsx",
-              "RelativeDocumentMoniker": "culturolocator.presentation\\src\\Components\\Login\\Login.jsx",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Components\\Login\\Login.jsx",
-              "RelativeToolTip": "culturolocator.presentation\\src\\Components\\Login\\Login.jsx",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-04-27T19:12:18.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Axios.jsx",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Axios\\Axios.jsx",
-              "RelativeDocumentMoniker": "culturolocator.presentation\\src\\Axios\\Axios.jsx",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Axios\\Axios.jsx",
-              "RelativeToolTip": "culturolocator.presentation\\src\\Axios\\Axios.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-04-27T19:10:16.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Program.cs",
-              "RelativeDocumentMoniker": "Culturolocator\\Program.cs",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Program.cs",
-              "RelativeToolTip": "Culturolocator\\Program.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAYwBAAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T18:25:44.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Culturolocator\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Culturolocator\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowBgAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T19:11:04.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Weather.jsx",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Components\\Weather\\Weather.jsx",
-              "RelativeDocumentMoniker": "culturolocator.presentation\\src\\Components\\Weather\\Weather.jsx",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Components\\Weather\\Weather.jsx",
-              "RelativeToolTip": "culturolocator.presentation\\src\\Components\\Weather\\Weather.jsx",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwBwAAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-04-27T19:16:23.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\appsettings.json",
-              "RelativeDocumentMoniker": "Culturolocator\\appsettings.json",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\appsettings.json",
-              "RelativeToolTip": "Culturolocator\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-27T19:52:52.466Z",
+              "Title": "weathers.component.tsx",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Pages\\Weathers\\weathers.component.tsx",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Pages\\Weathers\\weathers.component.tsx",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Pages\\Weathers\\weathers.component.tsx",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Pages\\Weathers\\weathers.component.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-06T11:03:37.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AppRepository.jsx",
-              "DocumentMoniker": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Repository\\AppRepository.jsx",
-              "RelativeDocumentMoniker": "culturolocator.presentation\\src\\Repository\\AppRepository.jsx",
-              "ToolTip": "C:\\Users\\vanes\\source\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.presentation\\src\\Repository\\AppRepository.jsx",
-              "RelativeToolTip": "culturolocator.presentation\\src\\Repository\\AppRepository.jsx",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBQAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-04-27T19:10:12.802Z",
+              "Title": "weather-list.component.tsx",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Component\\weathers-list\\weather-list.component.tsx",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Component\\weathers-list\\weather-list.component.tsx",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Component\\weathers-list\\weather-list.component.tsx",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Component\\weathers-list\\weather-list.component.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-06T11:03:20.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "axios.ts",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\axios-config\\axios.ts",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\axios-config\\axios.ts",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\axios-config\\axios.ts",
+              "RelativeToolTip": "culturolocator.frontend\\src\\axios-config\\axios.ts",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAGIAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-06T10:48:42.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\appsettings.json",
+              "RelativeDocumentMoniker": "Culturolocator\\appsettings.json",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\Culturolocator\\appsettings.json",
+              "RelativeToolTip": "Culturolocator\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-05T22:43:25.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\App.tsx",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\App.tsx",
+              "RelativeToolTip": "culturolocator.frontend\\src\\App.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswBYAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-05T22:26:03.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "register.component.tsx",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Pages\\Register\\register.component.tsx",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Pages\\Register\\register.component.tsx",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Pages\\Register\\register.component.tsx",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Pages\\Register\\register.component.tsx",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAE4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-05T22:20:32.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CulturolocatorService.ts",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Repository\\CulturolocatorService.ts",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Repository\\CulturolocatorService.ts",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Repository\\CulturolocatorService.ts",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Repository\\CulturolocatorService.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-05T22:20:06.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterDTO.ts",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Models\\DTO\\RegisterDTO.ts",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Models\\DTO\\RegisterDTO.ts",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Models\\DTO\\RegisterDTO.ts",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Models\\DTO\\RegisterDTO.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-05T22:12:54.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginDTO.ts",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Models\\DTO\\LoginDTO.ts",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Models\\DTO\\LoginDTO.ts",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Models\\DTO\\LoginDTO.ts",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Models\\DTO\\LoginDTO.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-05T22:12:53.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.component.tsx",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Pages\\Login\\login.component.tsx",
+              "RelativeDocumentMoniker": "culturolocator.frontend\\src\\Pages\\Login\\login.component.tsx",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\Refactor\\Culturolocator\\culturolocator.frontend\\src\\Pages\\Login\\login.component.tsx",
+              "RelativeToolTip": "culturolocator.frontend\\src\\Pages\\Login\\login.component.tsx",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-05T22:12:02.688Z",
               "EditorCaption": ""
             }
           ]

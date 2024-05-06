@@ -1,0 +1,288 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|c:\\users\\vanes\\dians-proekt\\\u0434\u043E\u043C\u0430\u0448\u043D\u043E 4\\culturallyhistoricalobjectswebapp\\culturallyhistoricalobjectswebapp\\service\\historicalobjectsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\service\\historicalobjectsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4233A7F8-17D6-49E4-97F0-3DB45A78ACB4}|Distance Microservice\\Distance Microservice.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\distance microservice\\controllers\\distancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4233A7F8-17D6-49E4-97F0-3DB45A78ACB4}|Distance Microservice\\Distance Microservice.csproj|solutionrelative:distance microservice\\controllers\\distancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\controllers\\historicalculturalobjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\controllers\\historicalculturalobjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\data\\datareading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\data\\datareading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7603FD3A-7E12-4AAB-B7DD-9A2B7820232A}|Filter Microservice\\Filter Microservice.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\filter microservice\\service\\filterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7603FD3A-7E12-4AAB-B7DD-9A2B7820232A}|Filter Microservice\\Filter Microservice.csproj|solutionrelative:filter microservice\\service\\filterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7603FD3A-7E12-4AAB-B7DD-9A2B7820232A}|Filter Microservice\\Filter Microservice.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\filter microservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7603FD3A-7E12-4AAB-B7DD-9A2B7820232A}|Filter Microservice\\Filter Microservice.csproj|solutionrelative:filter microservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4233A7F8-17D6-49E4-97F0-3DB45A78ACB4}|Distance Microservice\\Distance Microservice.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\distance microservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4233A7F8-17D6-49E4-97F0-3DB45A78ACB4}|Distance Microservice\\Distance Microservice.csproj|solutionrelative:distance microservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4233A7F8-17D6-49E4-97F0-3DB45A78ACB4}|Distance Microservice\\Distance Microservice.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\distance microservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4233A7F8-17D6-49E4-97F0-3DB45A78ACB4}|Distance Microservice\\Distance Microservice.csproj|solutionrelative:distance microservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\culturallyhistoricalobjectswebapp\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F14DEB24-ED6C-49EB-A150-ADE80700E8AB}|CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp.csproj|solutionrelative:culturallyhistoricalobjectswebapp\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7603FD3A-7E12-4AAB-B7DD-9A2B7820232A}|Filter Microservice\\Filter Microservice.csproj|C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\filter microservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7603FD3A-7E12-4AAB-B7DD-9A2B7820232A}|Filter Microservice\\Filter Microservice.csproj|solutionrelative:filter microservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistoricalObjectsService.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Service\\HistoricalObjectsService.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Service\\HistoricalObjectsService.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Service\\HistoricalObjectsService.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Service\\HistoricalObjectsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:26:41.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DistanceController.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Distance Microservice\\Controllers\\DistanceController.cs",
+              "RelativeDocumentMoniker": "Distance Microservice\\Controllers\\DistanceController.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Distance Microservice\\Controllers\\DistanceController.cs",
+              "RelativeToolTip": "Distance Microservice\\Controllers\\DistanceController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:26:35.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Controllers\\ManageController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:26:28.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoricalCulturalObjectsController.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\HistoricalCulturalObjectsController.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Controllers\\HistoricalCulturalObjectsController.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\HistoricalCulturalObjectsController.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Controllers\\HistoricalCulturalObjectsController.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:26:04.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAH4BAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:26:02.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:25:09.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataReading.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Data\\DataReading.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Data\\DataReading.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Data\\DataReading.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Data\\DataReading.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:24:22.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FilterService.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Filter Microservice\\Service\\FilterService.cs",
+              "RelativeDocumentMoniker": "Filter Microservice\\Service\\FilterService.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Filter Microservice\\Service\\FilterService.cs",
+              "RelativeToolTip": "Filter Microservice\\Service\\FilterService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwBoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:14:42.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Distance Microservice\\Web.config",
+              "RelativeDocumentMoniker": "Distance Microservice\\Web.config",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Distance Microservice\\Web.config",
+              "RelativeToolTip": "Distance Microservice\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-03T11:18:33.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Distance Microservice\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Distance Microservice\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Distance Microservice\\Global.asax.cs",
+              "RelativeToolTip": "Distance Microservice\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:18:30.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\packages.config",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\packages.config",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\packages.config",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-03T11:17:53.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Startup.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Startup.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Startup.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:17:37.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Global.asax.cs",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Global.asax.cs",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Global.asax.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:14:04.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Filter Microservice\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Filter Microservice\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Filter Microservice\\Global.asax.cs",
+              "RelativeToolTip": "Filter Microservice\\Global.asax.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:14:04.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Web.config",
+              "RelativeDocumentMoniker": "CulturallyHistoricalObjectsWebApp\\Web.config",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\CulturallyHistoricalObjectsWebApp\\Web.config",
+              "RelativeToolTip": "CulturallyHistoricalObjectsWebApp\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-03T11:14:04.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Filter Microservice\\Web.config",
+              "RelativeDocumentMoniker": "Filter Microservice\\Web.config",
+              "ToolTip": "C:\\Users\\vanes\\dians-proekt\\\u0414\u043E\u043C\u0430\u0448\u043D\u043E 4\\CulturallyHistoricalObjectsWebApp\\Filter Microservice\\Web.config",
+              "RelativeToolTip": "Filter Microservice\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-03T11:14:04.741Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
