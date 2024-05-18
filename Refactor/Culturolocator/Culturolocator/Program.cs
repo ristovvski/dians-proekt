@@ -1,4 +1,6 @@
 using Culturolocator.Data;
+using Culturolocator.Repository.Implementation;
+using Culturolocator.Repository.Interface;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,16 +20,31 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddScoped<ReadJsonData>();
+
+builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+.LogTo(Console.WriteLine, LogLevel.Information));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<DataContext>();
+
 
 builder.Services.AddAuthentication();
 builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStores<DataContext>();
 
 var app = builder.Build();
 
-app.UseCors("AllowSpecificOrigins");
+// Create a scope to resolve the DataContext
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetService<DataContext>();
 
-//Configure the HTTP request pipeline.
+    // Seed the data
+    dbContext?.SeedData();
+}
+
+app.UseCors("AllowSpecificOrigins");
 
 app.MapIdentityApi<IdentityUser>();
 app.UseHttpsRedirection();

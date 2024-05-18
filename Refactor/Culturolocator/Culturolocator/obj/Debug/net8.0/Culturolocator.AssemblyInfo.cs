@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Culturolocator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5807c8de0b2caf5546d9e64399915d2110838e48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16d889c641e7f50c7510b71ccc37a22dac40b1b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Culturolocator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Culturolocator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

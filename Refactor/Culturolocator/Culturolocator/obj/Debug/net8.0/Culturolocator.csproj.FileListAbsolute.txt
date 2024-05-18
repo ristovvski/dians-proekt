@@ -502,3 +502,7 @@ C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\obj\Debug\net
 C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\obj\Debug\net8.0\Culturolocator.pdb
 C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\obj\Debug\net8.0\Culturolocator.genruntimeconfig.cache
 C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\obj\Debug\net8.0\ref\Culturolocator.dll
+C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\bin\Debug\net8.0\Data\JsonData\historical_cultural_objects.json
+C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\bin\Debug\net8.0\Culturolocator.staticwebassets.runtime.json
+C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\vanes\dians-proekt\Refactor\Culturolocator\Culturolocator\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
